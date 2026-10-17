@@ -1,0 +1,13 @@
+{
+  "platform": "Linux Electron, not Windows",
+  "fixture": true,
+  "legacyGamesQueued": 2,
+  "finishedIncluded": true,
+  "oldNegativeMarkedPending": true,
+  "personalNotesRemoved": true,
+  "tagsPreserved": true,
+  "oneTimeMigration": true,
+  "explicitStopSurvivesReopen": true,
+  "allGamesButtonIPC": true,
+  "singleGameResearchIPC": true
+}

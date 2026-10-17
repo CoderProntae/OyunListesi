@@ -1,0 +1,15 @@
+{
+  "platform": "Linux; not a Windows runtime test",
+  "manualTopMenu": true,
+  "addressNavigation": true,
+  "tabCreateCloseSwitch": true,
+  "popupInNewTab": true,
+  "appLinkInSameBrowser": true,
+  "backForward": true,
+  "ctrlL": true,
+  "blockedFileNavigation": true,
+  "remoteHasNoAppBridge": true,
+  "isolatedSession": true,
+  "reopening": true
+}
+exit=0

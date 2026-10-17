@@ -1,0 +1,34 @@
+
+> oyun-siralayici@1.0.6 test:ui
+> playwright test
+
+
+Running 25 tests using 1 worker
+
+  ✓   1 tests/ui/app.spec.ts:196:5 › bulk numbered import, range selection, duplicate merge and automatic series (4.3s)
+  ✓   2 tests/ui/app.spec.ts:222:5 › manual group, play list membership, delete confirmation and undo (5.2s)
+  ✓   3 tests/ui/app.spec.ts:258:5 › virtualizes 2000 games and persists keyboard reorder (3.2s)
+  ✓   4 tests/ui/app.spec.ts:287:5 › drag game into a group and chat attachment without changing library twice (2.7s)
+  ✓   5 tests/ui/app.spec.ts:330:5 › theme and hardware editing survive reload; unsupported reasoning stays disabled (4.3s)
+  ✓   6 tests/ui/app.spec.ts:352:5 › agent mutation requires visible approval and denial reaches model; allow then mutates (2.7s)
+  ✓   7 tests/ui/app.spec.ts:382:5 › wizard supports next/back, multiselect, custom answer and resumes agent (2.6s)
+  ✓   8 tests/ui/app.spec.ts:414:5 › small viewport remains operable and modal focus is contained (2.2s)
+  ✓   9 tests/ui/app.spec.ts:431:5 › wizard skip and cancel are sent back without mutating library (2.0s)
+  ✓  10 tests/ui/app.spec.ts:454:5 › clean detail view keeps Steam selection but removes raw system explanations (2.7s)
+  ✓  11 tests/ui/app.spec.ts:488:5 › consecutive tool cards collapse without losing results, retry or error details (1.2s)
+  ✓  12 tests/ui/app.spec.ts:547:5 › source provenance retains AI label, quote and changed fields after reload (1.8s)
+  ✓  13 tests/ui/app.spec.ts:574:5 › 20,000 output and loaded-context inputs are distinct and persist (3.1s)
+  ✓  14 tests/ui/app.spec.ts:600:5 › real SSE orchestration reaches fifteen tool rounds then a Markdown final answer (1.6s)
+  ✓  15 tests/ui/app.spec.ts:626:5 › autonomous default applies metadata with no permission, fetch or evidence and supports undo (1.6s)
+  ✓  16 tests/ui/app.spec.ts:660:5 › confirmation is opt-in and can be saved without changing autonomous default (2.7s)
+  ✓  17 tests/ui/app.spec.ts:679:5 › store cards separate missing from unavailable and open real products / SteamDB (2.2s)
+  ✓  18 tests/ui/app.spec.ts:744:5 › HLTB displays fetched hours rather than a search shortcut (2.0s)
+  ✓  19 tests/ui/app.spec.ts:774:5 › official no and community partial yes remain separate; manual patch needs no link (3.0s)
+  ✓  20 tests/ui/app.spec.ts:804:5 › top-menu browser control explains the web preview limitation (1.1s)
+  ✓  21 tests/ui/app.spec.ts:813:5 › starts in Statistics with one playlist, next unfinished in order and no redundant chrome (1.5s)
+  ✓  22 tests/ui/app.spec.ts:846:5 › bulk import lets each row search another Steam title and persists the chosen app ID (3.3s)
+  ✓  23 tests/ui/app.spec.ts:875:5 › system table aligns rows by component and separates minimum, recommended and optimum (1.6s)
+  ✓  24 tests/ui/app.spec.ts:926:5 › legacy library gets one whole-library review and old no-patch claims become provisional (3.8s)
+  ✓  25 tests/ui/app.spec.ts:973:5 › all-games research button requeues completed games without changing their order or notes (2.2s)
+
+  25 passed (1.1m)

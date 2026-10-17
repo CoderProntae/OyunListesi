@@ -1,0 +1,207 @@
+{
+  "name": "Portal 2",
+  "fetchStatus": "done",
+  "hasDescription": false,
+  "coverCached": false,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "review",
+      "checkedAt": "2026-10-15T21:27:46.122Z",
+      "source": "Steam Store",
+      "message": "Steam oyunu seçilmedi. Mağazalar bölümünden arayıp kendin seçebilirsin."
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:46.122Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:46.128Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Xbox",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:46.128Z",
+      "source": "Microsoft Store kataloğu",
+      "message": "Bu adla Xbox / Microsoft Store ürün kaydı bulunamadı.",
+      "candidates": []
+    }
+  ],
+  "stores": [],
+  "hltb": {
+    "status": "found",
+    "main": 8.58,
+    "mainExtra": 13.77,
+    "completionist": 22.93,
+    "url": "https://howlongtobeat.com/game/7231",
+    "sourceUrl": "https://hltbapi.codepotatoes.de/hltb/7231",
+    "via": "HowLongToBeat · Codepotatoes topluluk API’si",
+    "checkedAt": "2026-10-15T21:27:47.629Z",
+    "sourceUpdatedAt": "2026-10-13T22:49:48.1198049"
+  },
+  "minimum": {
+    "raw": ""
+  },
+  "recommended": {
+    "raw": ""
+  }
+}
+{
+  "name": "Hollow Knight",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "review",
+      "checkedAt": "2026-10-15T21:27:47.631Z",
+      "source": "Steam Store",
+      "message": "Steam oyunu seçilmedi. Mağazalar bölümünden arayıp kendin seçebilirsin."
+    },
+    {
+      "store": "GOG",
+      "status": "found",
+      "checkedAt": "2026-10-15T21:27:47.631Z",
+      "source": "GOG kataloğu",
+      "url": "https://www.gog.com/en/game/hollow_knight",
+      "matchedTitle": "Hollow Knight",
+      "priceUpdatedAt": "2026-10-15T21:27:47.631Z"
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:47.632Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Xbox",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:47.632Z",
+      "source": "Microsoft Store kataloğu",
+      "message": "Bu adla Xbox / Microsoft Store ürün kaydı bulunamadı.",
+      "candidates": []
+    }
+  ],
+  "stores": [
+    {
+      "name": "GOG",
+      "url": "https://www.gog.com/en/game/hollow_knight",
+      "verified": true,
+      "price": "5.99 USD",
+      "source": "GOG kataloğu",
+      "checkedAt": "2026-10-15T21:27:47.631Z",
+      "priceUpdatedAt": "2026-10-15T21:27:47.631Z"
+    }
+  ],
+  "hltb": {
+    "status": "found",
+    "main": 27,
+    "mainExtra": 41.5,
+    "completionist": 65.5,
+    "allStyles": 41.5,
+    "url": "https://howlongtobeat.com/game/26286",
+    "sourceUrl": "https://www.gog.com/en/game/hollow_knight",
+    "via": "HowLongToBeat · GOG üzerinde yayımlanan süreler",
+    "checkedAt": "2026-10-15T21:27:49.506Z"
+  },
+  "minimum": {
+    "raw": "OS: Windows 7 / 8 / 10\nProcessor: Intel Core 2 Duo E5200\nMemory: 4 GB RAM\nGraphics: GeForce 9800GTX (1GB)\nDirectX: Version 10\nStorage: 9 GB available space\nOther: 1080p, 16:9 recommended",
+    "os": "Windows 7 / 8 / 10",
+    "cpu": "Intel Core 2 Duo E5200",
+    "gpu": "GeForce 9800GTX (1GB)",
+    "ramGB": 4,
+    "vramGB": 1,
+    "storageGB": 9,
+    "directX": 10
+  },
+  "recommended": {
+    "raw": "OS: Windows 10\nProcessor: Processor: Intel Core i5\nMemory: 8 GB RAM\nGraphics: GeForce GTX 560\nDirectX: Version 11\nStorage: 9 GB available space\nOther: 1080p, 16:9 recommended",
+    "os": "Windows 10",
+    "cpu": "Processor: Intel Core i5",
+    "gpu": "GeForce GTX 560",
+    "ramGB": 8,
+    "storageGB": 9,
+    "directX": 11
+  }
+}
+{
+  "name": "Fortnite",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "review",
+      "checkedAt": "2026-10-15T21:27:49.509Z",
+      "source": "Steam Store",
+      "message": "Steam oyunu seçilmedi. Mağazalar bölümünden arayıp kendin seçebilirsin."
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T21:27:49.509Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "found",
+      "checkedAt": "2026-10-15T21:27:49.510Z",
+      "source": "EGData · topluluk kataloğu",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "matchedTitle": "Fortnite",
+      "message": "Ürün bağlantısı EGData katalog eşlemesinden alındı; Epic sayfası canlı doğrulaması değildir.",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    },
+    {
+      "store": "Xbox",
+      "status": "unavailable",
+      "checkedAt": "2026-10-15T21:27:50.628Z",
+      "source": "Microsoft Store kataloğu",
+      "message": "Kaynak HTTP 400 döndürdü."
+    }
+  ],
+  "stores": [
+    {
+      "name": "Epic Games",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "verified": true,
+      "price": "Ücretsiz",
+      "source": "EGData · topluluk kataloğu",
+      "checkedAt": "2026-10-15T21:27:49.510Z",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    }
+  ],
+  "hltb": {
+    "status": "found",
+    "main": 66.28,
+    "mainExtra": 168.87,
+    "completionist": 519.79,
+    "url": "https://howlongtobeat.com/game/3657",
+    "sourceUrl": "https://hltbapi.codepotatoes.de/hltb/3657",
+    "via": "HowLongToBeat · Codepotatoes topluluk API’si",
+    "checkedAt": "2026-10-15T21:27:51.532Z",
+    "sourceUpdatedAt": "2026-09-04T08:45:00.8323563"
+  },
+  "minimum": {
+    "raw": ""
+  },
+  "recommended": {
+    "raw": ""
+  }
+}
+exit=0

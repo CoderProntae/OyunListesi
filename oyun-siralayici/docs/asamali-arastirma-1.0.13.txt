@@ -1,0 +1,25 @@
+{
+  "platform": "Linux Electron; Windows runtime not tested",
+  "model": "Local deterministic HTTP/SSE fixture; not real LM Studio inference",
+  "stages": [
+    "DONANIM",
+    "ÖZET"
+  ],
+  "initialPromptChars": 144,
+  "noDeviceDumpInStagePrompt": true,
+  "automaticResearchCannotEditPersonalFields": true,
+  "selectedOutputLimit": 16128,
+  "allRequestsKeptSelectedLimit": true,
+  "requestCount": 8,
+  "retiredEstimateWouldClamp": true,
+  "hardwareSaved": true,
+  "summarySaved": true,
+  "malformedCallRejected": true,
+  "rawInputPreserved": true,
+  "protocolEnvelopeRepaired": true,
+  "correctedPatchSaved": true,
+  "missingRequirementsNotFaked": true,
+  "removedStagesAbsent": true,
+  "personalNoteNeverSentToModel": true
+}
+exit=0

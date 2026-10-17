@@ -1,0 +1,14 @@
+{
+  "platform": "Linux Electron, not Windows",
+  "model": "deterministic HTTP/SSE fixture",
+  "resumeSkippedSavedHardware": true,
+  "resumeSkippedSavedDetails": true,
+  "explicitRestartIncludedHardware": true,
+  "previousChatPreserved": true,
+  "stages": [
+    "resume:TÜRKÇE YAMA",
+    "restart:DONANIM",
+    "restart:DİL VE SÜRE",
+    "restart:TÜRKÇE YAMA"
+  ]
+}

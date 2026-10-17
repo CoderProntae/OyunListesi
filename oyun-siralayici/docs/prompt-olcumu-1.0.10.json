@@ -1,0 +1,35 @@
+{
+  "measurement": "Characters in fixed Max Payne fixture, NOT tokenizer measurements",
+  "stages": [
+    {
+      "stage": "hardware",
+      "before": 5076,
+      "after": 137,
+      "newPrompt": "Oyun: Max Payne; gameId: fixture-game. AŞAMA: DONANIM. Gereksinimleri doldur, eksik bileşenleri araştır ve sonunda uyumluluğu kontrol et."
+    },
+    {
+      "stage": "summary",
+      "before": 895,
+      "after": 109,
+      "newPrompt": "Oyun: Max Payne; gameId: fixture-game. AŞAMA: ÖZET. Oyunu anlatan kısa Türkçe özeti aiSummary alanına kaydet."
+    },
+    {
+      "stage": "details",
+      "before": 678,
+      "after": 134,
+      "newPrompt": "Oyun: Max Payne; gameId: fixture-game. AŞAMA: DİL VE SÜRE. Resmi Türkçe arayüz/ses/altyazı ve gerçek HLTB sürelerini araştırıp kaydet."
+    },
+    {
+      "stage": "patch",
+      "before": 1434,
+      "after": 163,
+      "newPrompt": "Oyun: Max Payne; gameId: fixture-game. AŞAMA: TÜRKÇE YAMA. Genel webde Türkçe yamayı araştır; uygun oyun/sürüm için varlık sonucunu ve varsa bağlantılarını kaydet."
+    }
+  ],
+  "beforeTotal": 8083,
+  "afterTotal": 543,
+  "sharedPolicyChars": 1348,
+  "normalTools": 26,
+  "hasPersonalNoteField": false,
+  "nativeToolsChars": 20412
+}

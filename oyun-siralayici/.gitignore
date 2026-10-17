@@ -1,0 +1,9 @@
+node_modules/
+dist/
+electron-dist/
+.cache/
+Yayin/
+*.log
+.env
+secrets.bin
+library.json

@@ -1,0 +1,14 @@
+✓ hardware-data          2 sn  · hardware-db.json: 4950 işlemci, 4468 ekran kartı, 488 KB (2026-10-17)
+✓ typecheck              30 sn
+✓ unit                   32 sn  · Tests 515 passed | 1 skipped (516)
+✓ build                  9 sn
+✓ smoke:overlay          16 sn
+✓ smoke:electron         2 sn  · {"desktop":true,"autonomousDefault":true,"bridge":true,"add":true,"remove":true,"undo":true,
+✗ smoke:katman           160 sn
+
+--- smoke:katman başarısız (/home/user/oyun-siralayici/.cache/release-logs/smoke:katman.log) ---
+katman smoke d3d12: SONUC=GECTI (d3d12)
+katman smoke d3d9: SONUC=GECTI (d3d9)
+katman smoke gl: SONUC=GECTI (gl)
+katman smoke d3d11: SONUC=KALDI
+

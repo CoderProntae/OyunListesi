@@ -1,0 +1,41 @@
+{
+  "escapesDecoded": true,
+  "archive": "win-unpacked/resources/app.asar (Oyun-Siralayici-1.0.13-Portable.exe)",
+  "scannedFiles": [
+    "dist/assets/index-Cd-DzE9t.js",
+    "electron-dist/browser-preload.cjs",
+    "electron-dist/browser.html",
+    "electron-dist/main.cjs",
+    "electron-dist/preload.cjs"
+  ],
+  "searchedRemovedStrings": [
+    "check_turkish_patch",
+    "patchSearch",
+    "Türkçe filtresi",
+    "TÜRKÇE YAMA",
+    "DİL VE SÜRE",
+    "türkçe yama",
+    "game_language_options",
+    "localizationScope"
+  ],
+  "found": [
+    {
+      "string": "patchSearch",
+      "file": "electron-dist/main.cjs",
+      "context": "d); const stage = g.research?.stage; const legacy = g.turkish !== void 0 || g.patchSearchRevision !== void 0 || removedStages.has(stage); "
+    }
+  ],
+  "requiredPresent": {
+    "hltbCommunityApi": true,
+    "hltbPageReading": true,
+    "gogHltbSection": true,
+    "restoreMarker": true,
+    "agentHltbField": true,
+    "refreshToolMentionsHltb": true,
+    "uiSection": true,
+    "uiRefreshButton": true,
+    "uiStripLabel": true,
+    "notePanel": true,
+    "preloadAllowsNote": true
+  }
+}

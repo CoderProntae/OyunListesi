@@ -1,0 +1,179 @@
+/* In-game corner overlay. Colors come from the active look (CSS variables). */
+.hud {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.35em;
+  padding: 0.6em 0.75em;
+  border-radius: 0.75em;
+  background: var(--hud-bg);
+  color: var(--hud-text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0 1px 2px #0008;
+  min-width: 7.5em;
+  box-sizing: border-box;
+}
+.hud-title {
+  display: flex;
+  flex-direction: column;
+  border-left: 0.2em solid var(--hud-accent);
+  padding-left: 0.5em;
+  max-width: 19em;
+}
+.hud-title small {
+  font-size: 0.62em;
+  letter-spacing: 0.12em;
+  color: var(--hud-label);
+  font-weight: 700;
+}
+.hud-title strong {
+  font-size: 0.95em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hud-metrics {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 0.9em;
+  row-gap: 0.18em;
+}
+.hud-horizontal .hud-metrics {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8em;
+}
+.hud-metric {
+  display: contents;
+}
+.hud-horizontal .hud-metric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
+}
+.hud-metric span {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--hud-label);
+  align-self: center;
+}
+.hud-metric b {
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+  transition: color 0.25s;
+}
+.hud-metric.warn b {
+  color: var(--hud-warn);
+}
+.hud-metric.danger b {
+  color: var(--hud-danger);
+}
+.hud-alert {
+  font-size: 0.85em;
+  font-weight: 700;
+  padding: 0.45em 0.6em;
+  border-radius: 0.5em;
+  background: var(--hud-warn);
+  color: #1b1405;
+  text-shadow: none;
+  max-width: 19em;
+  animation: hudPulse 1.2s ease-in-out 3;
+}
+.hud-alert.limit,
+.hud-alert.alarm {
+  background: var(--hud-danger);
+  color: #fff;
+}
+@keyframes hudPulse {
+  50% {
+    filter: brightness(1.25);
+  }
+}
+/* 2.0.1: "Şimdi oynanıyor" slides in from the right and leaves; then the
+   values come in quickly, one after another. */
+.hud-toast {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65em;
+  padding: 0.7em 1.05em 0.7em 0.8em;
+  border-radius: 0.8em;
+  background: var(--hud-bg);
+  color: var(--hud-text);
+  border-left: 0.25em solid var(--hud-accent);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  box-shadow: 0 6px 22px #0007;
+  animation: hudToast 3.6s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  max-width: 24em;
+  box-sizing: border-box;
+}
+.hud-toast > span:last-child {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.hud-toast small {
+  font-size: 0.62em;
+  letter-spacing: 0.14em;
+  color: var(--hud-accent);
+  font-weight: 800;
+}
+.hud-toast strong {
+  font-size: 1.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 19em;
+}
+.hud-toast-icon {
+  width: 1.9em;
+  height: 1.9em;
+  border-radius: 0.55em;
+  display: grid;
+  place-items: center;
+  background: var(--hud-accent);
+  color: #0b0c12;
+  font-size: 0.8em;
+  flex-shrink: 0;
+}
+@keyframes hudToast {
+  0% {
+    transform: translateX(115%);
+    opacity: 0;
+  }
+  13% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  86% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(115%);
+    opacity: 0;
+  }
+}
+.hud-enter {
+  animation: hudBoxIn 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+@keyframes hudBoxIn {
+  from {
+    opacity: 0;
+    transform: translateX(26px);
+  }
+}
+.hud-enter .hud-metric > *,
+.hud-enter .hud-title {
+  animation: hudIn 0.32s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 40ms + 60ms);
+}
+@keyframes hudIn {
+  from {
+    opacity: 0;
+    transform: translateX(14px);
+  }
+}

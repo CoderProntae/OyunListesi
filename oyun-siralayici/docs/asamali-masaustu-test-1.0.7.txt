@@ -1,0 +1,18 @@
+Downloading Electron binary...
+{
+  "platform": "Linux Electron; Windows runtime not tested",
+  "model": "Local deterministic HTTP/SSE fixture; not real LM Studio inference",
+  "stages": [
+    "DONANIM",
+    "ÖZET",
+    "DİL VE SÜRE",
+    "TÜRKÇE YAMA"
+  ],
+  "hardwareSaved": true,
+  "summarySaved": true,
+  "malformedCallRejected": true,
+  "rawInputPreserved": true,
+  "protocolEnvelopeRepaired": true,
+  "correctedPatchSaved": true,
+  "missingDetailsNotFaked": true
+}

@@ -1,0 +1,14 @@
+• sürüm 2.1.5 → 2.1.6
+✓ hardware-data          2 sn  · hardware-db.json: 4950 işlemci, 4468 ekran kartı, 488 KB (2026-10-17)
+✓ typecheck              28 sn
+✓ unit                   33 sn  · Tests 494 passed | 1 skipped (495)
+✓ build                  8 sn
+✓ smoke:overlay          14 sn
+✓ smoke:electron         2 sn  · {"desktop":true,"autonomousDefault":true,"bridge":true,"add":true,"remove":true,"undo":true,
+✓ package                53 sn
+✓ verify                 0 sn
+• Oyun-Siralayici-2.1.6-Portable.exe  117.1 MB  sha256 f8656107d767cd30…
+✓ publish                58 sn
+• kanal: https://x0.at/ti33.gz
+
+Tamam: 2.1.6 · toplam 171 sn

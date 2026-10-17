@@ -1,0 +1,28 @@
+
+> oyun-siralayici@1.0.6 test
+> vitest run
+
+
+ RUN  v5.0.4 /home/user/oyun-siralayici
+
+ ✓ tests/agent.test.ts (15 tests) 1275ms
+ ✓ tests/revision106.test.ts (17 tests) 920ms
+ ✓ tests/revision105.test.ts (9 tests) 440ms
+ ✓ tests/pages.test.ts (14 tests) 298ms
+ ✓ tests/catalogs.test.ts (26 tests) 89ms
+ ✓ tests/queue.test.ts (4 tests) 93ms
+ ✓ tests/lm.test.ts (8 tests) 108ms
+ ✓ tests/research.test.ts (19 tests) 104ms
+ ✓ tests/store.test.ts (12 tests) 52ms
+ ✓ tests/security.test.ts (18 tests) 33ms
+ ✓ tests/domain.test.ts (19 tests) 49ms
+ ✓ tests/context.test.ts (11 tests) 17ms
+
+ Test Files  12 passed (12)
+      Tests  172 passed (172)
+   Start at  15:11:54
+   Duration  7.06s (tests 62%, import 34%, transform 4%, worker 1%)
+
+    Isolate  12 workers spawned · ~106ms startup each (spawn + environment, per file)
+             at least ~1.16s faster with isolate: false — reuses workers across files instead of one per file
+

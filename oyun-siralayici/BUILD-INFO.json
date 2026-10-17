@@ -1,0 +1,365 @@
+{
+  "product": "Oyun Siralayici",
+  "version": "2.2.0",
+  "target": "Windows x64 portable",
+  "buildHost": "Linux x64",
+  "node": "22.23.3",
+  "electron": "44.7.2",
+  "electronBuilder": "26.15.3",
+  "compressionLevel": 3,
+  "generatedAt": "2026-10-17T17:02:41Z",
+  "executable": "Oyun-Siralayici-2.2.0-Portable.exe",
+  "bytes": 117350537,
+  "sha256": "a5fc877e8fd34b4efc4849999305ff7f21b51da74f7d55147ddf6ad54bd41673",
+  "defaults": {
+    "requireApproval": false,
+    "sourcesRequired": false,
+    "quotesRequired": false,
+    "priorFetchRequired": false,
+    "autoResearch": true
+  },
+  "integrations": {
+    "browser": "Isolated BrowserWindow chrome + WebContentsView tabs; dedicated persistent session",
+    "steam": "Store API: storesearch, appdetails, appreviews (language table not read)",
+    "gog": "GOG catalog and v2 product API; direct storeLink; product page read for its published HowLongToBeat section",
+    "epic": "EGData public community API; direct catalog mapping; not official Epic API",
+    "steamdb": "Direct in-app-browser link only; no extraction",
+    "xbox": "Microsoft Store public catalog; actual ProductId URLs; platform data; not Game Pass ownership",
+    "howLongToBeat": "Restored in 1.0.13: GOG product page HLTB section -> Codepotatoes community API (hltbapi.codepotatoes.de, Steam appId or name) -> HLTB game page __NEXT_DATA__ (page found via search provider when unknown); not an official HLTB API",
+    "removedIn1_0_12": [
+      "Official Turkish language detection",
+      "Turkish patch web search",
+      "1.0.6 patch re-research migration",
+      "Research stages DIL VE SURE and TURKCE YAMA"
+    ],
+    "wronglyRemovedIn1_0_12RestoredIn1_0_13": [
+      "HowLongToBeat times (Game.hltb), Ne kadar surer section, update_game_info.hltb, HLTB in refresh_game_info"
+    ],
+    "removedIn1_0_15": [
+      "Third requirement level 'optimum' (agent policy, update_game_info patch, record_compatibility level, Game.optimum, comparison column, analysis); old data dropped on load/import; an 'Optimum configuration' block in store text only ends the recommended block and is ignored"
+    ]
+  },
+  "researchStages": [
+    "hardware",
+    "summary (optional)"
+  ],
+  "agentTools": 25,
+  "personalNotes": {
+    "tab": "Not",
+    "storage": "library.json notes map keyed by game id, outside Game records",
+    "maxChars": 20000,
+    "agentAccess": false,
+    "inUndo": false,
+    "jsonExport": true,
+    "csvExport": false
+  },
+  "tests": {
+    "prettier": "passed",
+    "typecheck": "passed",
+    "unitIntegrationPassed": 359,
+    "unitIntegrationFiles": 22,
+    "revision112RegressionTests": 17,
+    "uiPassed": 47,
+    "revision112UITests": 2,
+    "noteIsolation": "passed: tool outputs and every model request in chat + automatic research scanned for a known note text; deliberate leak made the tests fail",
+    "electronLinuxSmoke": "passed: autonomous default, bridge, add/remove/undo, no hidden default application menu",
+    "electronBrowserSmoke": "passed: tabs, navigation, new-window links, IPC/session isolation, reopen",
+    "nativeStagedResearch": "passed: stages DONANIM -> OZET only; malformed summary call repaired; selected output limit kept; personal note never sent",
+    "nativeResume": "passed: resume ran only OZET; restart ran DONANIM -> OZET; previous chat preserved",
+    "nativeUpgrade": "passed: 1.0.11 library keeps HLTB times while Turkish data is cleaned once (pre-upgrade backup, nothing re-queued, explicit stop kept); then a 1.0.12-format library without times was restored from the pre-upgrade backup and 'Ne kadar surer?' showed 7 saat in the real Electron window",
+    "liveStoreCheck": "1.0.15: provider-smoke 'Max Payne' -> HLTB found via Codepotatoes (8.09 / 9.2 / 11.49 h); Steam needs manual selection",
+    "packagedMainPreloadsBrowserAndRenderer": {
+      "version": "1.0.15",
+      "target": "Windows x64 (PE machine 0x8664)",
+      "asarCodeAndAssetsByteMatched": true,
+      "browserFilesPresent": true,
+      "checkedFiles": [
+        "electron-dist/browser-preload.cjs",
+        "electron-dist/browser-ui.js",
+        "electron-dist/browser.html",
+        "electron-dist/main.cjs",
+        "electron-dist/preload.cjs",
+        "dist/assets/index-B8cHMWCO.js",
+        "dist/assets/index-Dv8mX4ti.css",
+        "dist/index.html"
+      ]
+    },
+    "packageScan": "escapes decoded; 'optimum' only in main.cjs for the store-text boundary regex and the legacy-data cleanup (renderer: only React's HTML <meter> attribute table); new policy/tool wording present; old 'minimum/önerilen/optimum' and 'raw replaces the level' wording absent; Ne kadar surer, Süreleri yenile and Not tab kept",
+    "dependencyAuditReportedVulnerabilities": 0,
+    "windowsRuntime": "NOT TESTED",
+    "realLMStudioModel": "NOT TESTED",
+    "revision113RegressionTests": 9,
+    "revision113UITests": 1,
+    "liveProviderCheck": "1.0.15: provider-smoke 'Max Payne' -> HLTB found via Codepotatoes (8.09 / 9.2 / 11.49 h); Steam needs manual selection",
+    "realUser1012Library": "NOT TESTED (fixtures in the same format were used)",
+    "revision114RegressionTests": 6,
+    "revision114UITests": 8,
+    "revision114BeforeFix": "7 of the 8 new UI tests failed on the 1.0.13 code; the Esc/focus test and the status test were checked by re-introducing the bug (both failed) and restoring it",
+    "revision115RegressionTests": 15,
+    "revision115UITests": 1,
+    "revision115BeforeFix": "the user's two update_game_info calls replayed on the 1.0.14 code erased recommended CPU/GPU/RAM/VRAM/OS and showed 0.015625 GB; mutation checks (replace semantics, repair marker, forced HLTB refresh, optimum offered again) each made the new tests fail",
+    "nativeRequirementRepair": "passed (one-off .cache script, not shipped): a 1.0.14-damaged Max Payne library plus an older backup opened in the real Electron window; recommended values restored, 0,81 GB kept, no optimum, table showed 16 MB / 128 MB / 0,81 GB",
+    "revision116Tests": 25,
+    "revision116UITests": 2,
+    "electronLinuxSmokes": "6 passed (electron, browser, research, resume, upgrade, catalog-ui)",
+    "storeAudit1_0_16": "scripts/store-audit.ts on real store answers: Steam 164 games/269 levels, GOG 49/68, Epic 28/55, Microsoft Store 20/40 – 0 components the text lists but the parser missed, 0 levels added that the store does not publish",
+    "livePlatformSmoke1_0_16": "scripts/live-platform-smoke.ts: Kane and Lynch Dead Men (Disk 7 GB, recommended CPU only), Kane & Lynch 2 (no recommended column, no disk row), Max Payne (region-free answer), Terraria (Sabit Disk Alanı), GOG Fallout 2, Epic Hades, Xbox Halo Infinite, My Abandonware Spider-Man, Platform yok",
+    "liveUserLibraryMigration1_0_16": "Dead Men carrying Kane & Lynch 2 values from a research chat was restored from Steam; Max Payne kept only the user's own 0,81 GB in Önerilen",
+    "electronWindowCheck1_0_16": "real window: GOG tab → Fallout 2 → added with GOG data; My Abandonware and Xbox tabs list results"
+  },
+  "promptMeasurementChars": {
+    "note": "characters, not tokens; 1.0.15 removed the optimum level from update_game_info/record_compatibility and added two short rules to the shared policy",
+    "nativeTools": {
+      "1.0.11": 20412,
+      "1.0.12": 18833,
+      "1.0.13": 19553,
+      "1.0.14": 19599,
+      "1.0.15": 18444
+    },
+    "sharedPolicy": {
+      "1.0.11": 1465,
+      "1.0.12": 1372,
+      "1.0.13": 1372,
+      "1.0.14": 1372,
+      "1.0.15": 1597
+    },
+    "stagePromptsMaxPayne": {
+      "1.0.11": 543,
+      "1.0.12": 246,
+      "1.0.13": 246,
+      "1.0.14": 246,
+      "1.0.15": 246
+    }
+  },
+  "report": "no separate report file (user asked for the .exe only)",
+  "userLibraryAccessed": false,
+  "dependenciesAdded": {},
+  "history": "1.0.13 details: docs/DEGISIKLIKLER-1.0.13.md and TEST-RAPORU.md; older reports in docs/",
+  "hltbRestore": {
+    "marker": "library.json migrations contains 1.0.13-hltb",
+    "trigger": "files written by 1.0.12 (notes key present, marker missing), also on backup restore / JSON import",
+    "backupRestore": "backups scanned newest to oldest; per game newest backed-up hltb + HLTB sources + hltb aiEditedFields; current values win; backups untouched; one time",
+    "backgroundFill": "games with catalogCheckedAt and no hltb get times-only jobs at start / after restore; no fetchStatus, store or research change",
+    "offline": "GOG catalog unreachable and no time found -> nothing written, remaining times-only jobs dropped, retried next start"
+  },
+  "uiReview1_0_14": {
+    "issuesFixed": 24,
+    "highlights": [
+      "store.play no longer resets status; edit inPlayList:false refused with a reason; misleading Listemde toggle removed; selection bar shows Koleksiyondan cikar only inside collections",
+      "Menu.setApplicationMenu(null): 16 hidden default accelerators removed (Ctrl+W/Q close, Ctrl+R reload, zoom, F11, devtools, ...)",
+      "Modal: keeps an autofocused text box, document-level Esc/Tab for the top-most dialog, focus restored to the element used before opening",
+      "Global shortcuts ignored while a dialog is open; Ctrl+I works with Turkish 'ı'",
+      "Hover preview hidden for the open game, on list changes/scroll and for filtered-away rows; plain-text summary",
+      "Collection chip ellipsis, long detail titles clamped, counter nowrap, Markdown AI summary, chat table cells no longer split inside words",
+      "Accent text colour darkened on light backgrounds (measured contrast 2.53 -> >= 4.5)",
+      "Turkish number formatting (shared/format.ts)",
+      "Settings: title Ayarlar, real version from package.json, fixed height, Turkish file button, same file re-selectable, readable backup labels"
+    ]
+  },
+  "requirementEdits1_0_15": {
+    "semantics": "update_game_info minimum/recommended are partial: only given fields change; a raw text updates only the fields it mentions; null clears one field; raw is regenerated from the merged fields; only parsed/explicit fields are marked AI-edited",
+    "repairMarker": "library.json migrations contains 1.0.15-requirements (new libraries are born with it)",
+    "repair": "levels with '<level>.raw' among aiEditedFields: empty but AI-marked value fields get the newest backed-up value of the same game (same appId; schema-valid); the backup's AI mark is kept; fields no backup fills are unmarked (also in agent sources) so a store refresh may fill them; current values win; backups untouched; one time; also on backup restore / JSON import",
+    "display": "sizes: <=2 decimals -> GB (0,81 GB, 8 GB); longer fractions below 1 GB -> MB (16 MB); DirectX as version (9, 12.1)",
+    "forcedHltbRefresh": "user-started refresh (force) with found HowLongToBeat hours replaces AI-written hltb values and drops hltb.* AI markers; automatic refreshes and failed lookups keep AI values; requirement AI edits are never replaced by a refresh"
+  },
+  "storeRequirements1_0_16": {
+    "rule": "requirements come only from the store/platform the game was added from (else the first store that has it: Steam, GOG, Epic, Xbox); a level or component the store does not publish is not added; no store → 'Sistem gereksinimleri belirtilmemiş'",
+    "addFlow": "Oyun ekle: 1. platform (Steam, GOG, Epic Games, Xbox, My Abandonware, Platform yok), 2. that platform's list",
+    "research": "automatic research only compares (record_compatibility) and may save aiSummary; it cannot change requirements or store data",
+    "migration": "1.0.16-store-requirements: research-written requirement fields released (user chat edits kept), every fetched game refreshed once from its store"
+  },
+  "release2_0": {
+    "updateChannel": "Telegraph page oyun-siralayici-guncelleme-10-16 (manifest) + x0.at (gzip EXE), SHA-256 verified",
+    "overlay": [
+      "oyun-yardimci.exe (mingw, Win32/PDH/CoreAudio/RTSS/NVAPI DRS)",
+      "PresentMon 2.6.0 (MIT)",
+      "nvidia-smi",
+      "LibreHardwareMonitor web server (optional)"
+    ],
+    "tests": {
+      "unit": "359/359",
+      "ui": "49/49",
+      "electronSmokes": [
+        "electron",
+        "research",
+        "resume",
+        "upgrade",
+        "overlay(simulated game)",
+        "catalog-ui",
+        "browser"
+      ],
+      "liveUpdatePipeline": "1.9.9 -> 2.0.0 download+verify OK",
+      "liveDlcData": "Life is Strange - Episode 2: HLTB 2.42 h, 2015-03-24, Metacritic 78"
+    },
+    "notTested": "real Windows: helper, PresentMon, nvidia-smi, RTSS, NVAPI, audio mute, tray, install script"
+  },
+  "release2_0_1": {
+    "overlay": "focus-independent detection (helper window list), HUD/panel kept directly above the game window (helper follow, non-topmost), panel closes when another program comes to front, 'Şimdi oynanıyor' intro notice then animated values",
+    "motion": "chat panel open/close, chat list width, messages, settings panes, sliding highlights, press feedback, now-playing chip",
+    "fixes": [
+      "chat list width on window resize",
+      "preset name editable",
+      "hotkey validation",
+      "video/meeting apps not games",
+      "HUD resize only on change"
+    ],
+    "tests": {
+      "unit": "366/366",
+      "ui": "49/49",
+      "electronSmokes": [
+        "electron",
+        "research",
+        "resume",
+        "upgrade",
+        "overlay(simulated game, intro notice)"
+      ],
+      "liveUpdate": "2.0.0 -> 2.0.1 seen, downloaded, verified"
+    },
+    "notTested": "real Windows: helper window list / follow, PresentMon, nvidia-smi, RTSS, NVAPI, audio mute, tray, install script"
+  },
+  "release2_0_2": {
+    "splitChat": "two chats one under the other (settings.chatSplit), compact look, focus-aware list, resizable divider",
+    "updater": "4 parallel ranged connections into a private temp folder, verify, copy to Desktop with retries, visible error state, speed shown; live 2.0.1->2.0.2 OK",
+    "uiAudit": "6 window sizes x dark/light, all main screens and settings tabs: 0 page/console errors, 0 overflow, 0 cut-off controls; fixed light-theme overlay editor, chat list row space, store card titles, comparison size",
+    "tests": {
+      "unit": "376/376",
+      "ui": "50/50",
+      "electronSmokes": [
+        "electron",
+        "research",
+        "resume",
+        "upgrade",
+        "overlay"
+      ]
+    },
+    "notTested": "real Windows: install script, helper, PresentMon, RTSS/NVAPI, audio mute, tray"
+  },
+  "release2_0_3": {
+    "cause": "file host closes single connections after ~20-30 s (curl at 1 MB/s: h2 cut at 27-30 s, h1 cut at 19 s); 2.0.1 had no resume -> 'terminated'",
+    "fix": "parts resume from where they stopped while data keeps arriving (only consecutive no-progress failures count, max 6); whole downloads restart up to 3 times; readable error text",
+    "tests": {
+      "unit": "378/378",
+      "ui": "50/50",
+      "audit": "0 errors, only the by-design narrow-window chat overlay",
+      "electronSmokes": 5,
+      "liveSlowLine": "0.33 MB/s per connection: 3 host cuts resumed, verified in 91 s",
+      "liveUpdate": "2.0.2 -> 2.0.3 OK"
+    }
+  },
+  "release2_0_4": {
+    "series": "own series: list header \"Yeni seri\", right click / detail ⋯ -> \"Seri oluştur / seriye ekle\"; name + searchable checklist; add to existing series (\"Nereye?\"); edit members/name from the series header; a series left with one game is removed; undo",
+    "hltb": "Codepotatoes search answered 404 for \"Unreal: Gold\" (HLTB title \"Unreal Gold\"): every search is retried once without separators; results still accepted only by the title check; one-time refresh (2.0.4-title-search) of games with a separator and no times",
+    "metacritic": "a listing without a critic score (Unreal Gold) is stored as metacriticNoScore and shown as \"puan yok\" (link); no other release score is used",
+    "researchStages": "hardware stage only when the store published requirements; none and summary off -> no model call, no chat",
+    "liveCheck": "My Abandonware \"Unreal: Gold\": HLTB 11.57/16.87/24.5 h (id 10827), Metacritic listed without score; stores: Steam/GOG/Epic/Xbox not found (delisted in 2022)",
+    "tests": {
+      "unit": "398/398",
+      "ui": "51/51",
+      "audit": "0 errors; only the by-design narrow-window chat overlay",
+      "electronSmokes": 5,
+      "liveUpdate": "2.0.3 -> 2.0.4 ready in 19 s; 2.0.4 sees current"
+    },
+    "channelAsset": "https://x0.at/wUDe.gz"
+  },
+  "release2_0_5": {
+    "updater": "no cmd/console window: the verified EXE is started directly (no helper process); the old app shows \"Yeni sürüm açılıyor…\" and quits when the new one reports its one-time token through the single-instance lock; the new instance retries the lock every 250 ms (max 60 s); the old EXE is deleted in the background by the new version (retries 180 s, resumed on the next start); stuck 2.0.0–2.0.4 cmd scripts are stopped by a hidden PowerShell that spares this app and the programs that started it, then the .cmd files are deleted",
+    "pcgamingwiki": "requirements from PCGamingWiki (Windows blocks only) when the store publishes none (My Abandonware, Platform yok, store page without requirements): the game's own Steam AppID, else titles (\"Name (Year)\", name variants), then search; exact title key and year ±2; nothing -> \"belirtilmemiş\" with the reason and no hardware stage; one-time migration 2.0.5-pcgamingwiki; unreachable -> retried on the next start",
+    "tests": {
+      "unit": "423/423",
+      "ui": "52/52",
+      "audit": "0 errors; only the by-design narrow-window chat overlay",
+      "electronSmokes": 6,
+      "handoffSmoke": "two real Electron instances on one data folder: token received 3x, no window while the old one runs, takeover 295 ms after it closed",
+      "stopScript": "PowerShell 7.4 run of the stop logic on a made-up process list: own ancestors spared, stuck script + find + console stopped; production script parses with 0 errors",
+      "pcgw": "sandbox IP blocked by Cloudflare (403); parser and lookup tested on real page sources (Unreal, Prince of Persia, The Witcher 3) fetched through a proxy",
+      "liveUpdate": "2.0.4 -> 2.0.5 ready in 6 s; 2.0.5 sees current",
+      "windowsRuntime": "not run on real Windows"
+    },
+    "channelAsset": "https://x0.at/9s8h.gz"
+  },
+  "release2_0_6": {
+    "series": "a series never changes the list order (create/add/update, chat tool too); games between members split it into parts: each part has a header (later ones \"(devam)\", part/total count), one collapse folds all parts, dragging a header moves only its part; \"Oyunları yan yana topla\" (series window) gathers on request, undoable",
+    "tooling": "scripts/release.mjs: one command (version, typecheck ∥ unit, UI on the production bundle, build, package ∥ smokes, verify, EXE + BUILD-INFO); unit tests offline by default (tests/setup-offline.ts) and on 2 workers: 15 s instead of 27–60 s; UI tests served from a production build: 96 s instead of 150 s; whole release 172 s",
+    "tests": {
+      "unit": "425/425",
+      "ui": "53/53",
+      "electronSmokes": 6,
+      "windowsRuntime": "not run on real Windows"
+    },
+    "channelAsset": "https://x0.at/BFac.gz"
+  },
+  "release2_0_7": {
+    "pcgamingwikiInfo": "fields the platform left empty (cover, developers, publishers, year, genres, description; releaseDate only for the same year) come from the game's PCGamingWiki page (same matching as requirements; a page without a Windows block still counts); saved values never replaced; cover from images.pcgamingwiki.com (MediaWiki hashed path, checked against imageinfo); source entry PCGamingWiki with the filled fields; one-time migration 2.0.7-pcgamingwiki-info",
+    "windowsRuntime": "not run on real Windows",
+    "channelAsset": "https://x0.at/VyDi.gz"
+  },
+  "release2_0_8": {
+    "research": "manual research with a hardware stage asks first (game page, Statistics all/selected): AI'ya bırak (removes the user's earlier marks) or Kontrolleri sen seç, AI ayarlasın (Geçti/Geçmedi per row, computed rows preselected; saved at once as decidedBy user rows that win over computed/AI statuses, undoable; the agent's stage gets only get_game_info/get_hardware/check_compatibility/record_compatibility, record_compatibility must keep the user's status and only writes the explanation; one review for unexplained rows); stopped/failed/incomplete research with every result saved counts as done (derived in the UI, settled on start/stop/finish); done research hidden on the game page (slim bar otherwise); Statistics → Seçtiğim oyunları yeniden araştır (picker)",
+    "windowsRuntime": "not run on real Windows",
+    "channelAsset": "https://x0.at/Kxp9.gz"
+  },
+  "release2_1_0": {
+    "channelAsset": "https://x0.at/EPVE.gz",
+    "sha256": "f326ff0933ca2c1cecaedda0c801e961227bcd790c844c33dd3202c780ece491",
+    "summary": "CPU/GPU gereksinimleri PassMark puanları ve TechPowerUp özellikleriyle (shared/hardware-db.json) AI'sız karşılaştırılıyor; gereksinim metni parça parça okunuyor (model adları ve seçenekler, bellek, DirectX/Shader Model/OpenGL/Vulkan, T&L, AGP, dahili grafik, SSE/AVX, 64 bit, 'N çekirdek X GHz' oyunun yılına göre, 1990'lar donanımı, Any, çözünürlük). %10 içi fark 'yaklaşık eşit' (≈). Açıklamalar Sistem sekmesinde görünür. Donanım aşaması yalnız verinin karar veremediği satır varsa çalışır; AI sonucu aynı gereksinim ve bilgisayar için diğer oyunlara da yazılır; veriyle hesaplanan satırı AI değiştiremez. Model gerektirmeyen araştırma model beklemeden biter. Eski Windows adları, VRAM/DirectX/Vulkan için veri yedeği, HTML varlıklarının (&amp;) gösterimi.",
+    "data": {
+      "date": "2026-10-16",
+      "cpus": 4949,
+      "gpuEntries": 4468,
+      "sources": [
+        "PassMark CPU/GPU mega listeleri",
+        "TechPowerUp GPU DB dökümü (RonnyMuthomi/GPUs-Specs)"
+      ],
+      "refresh": "scripts/hardware-data.ts her sürümde (release.mjs)"
+    },
+    "coverage": "Kaggle Steam gereksinim listesi (7.835 oyun), i5-4460 + GTX 1660 SUPER: CPU %99,4, GPU %95,5 satırda karar (scripts/hardware-coverage.ts)",
+    "tests": {
+      "unit": "455 passed, 1 skipped",
+      "ui": "56/56",
+      "audit": "0 hata; 8 not: 1024×700 ve 960×650'de sohbet panelinin içeriğin üstünde durması (tasarım gereği)",
+      "smokes": [
+        "electron",
+        "research",
+        "upgrade",
+        "browser",
+        "resume",
+        "handoff"
+      ]
+    },
+    "notRun": [
+      "gerçek Windows",
+      "kullanıcının gerçek modeli",
+      "kullanıcının gerçek kütüphanesi"
+    ]
+  },
+  "release2_1_1": {
+    "channelAsset": "https://x0.at/p1Ju.gz",
+    "sha256": "a60f1bb29a882bc2231aeef5d8e5716efe5fbc6fddd68bdcb6b6fb80160712b0",
+    "summary": "Arayüz ve oyun katmanı temizliği: FPS sınırı sekmesindeki radyo dizilimi ve Görünüm sekmesi boşlukları düzeldi (editor.css), ham Electron hata metinleri cleanError() ile sadeleşti, dar pencerede sohbet çekmecesi karartmaya tıklayınca kapanıyor (chat-scrim) ve altındaki kontroller sahte tıklanabilir olmaktan çıktı, sohbet sağ tık menüsü ekrana sığdırılıyor, HUD FPS satırı ölçüm yoksa nedeni ipucunda taşıyor. Yeni denetimler: scripts/overlay-audit.spec.ts (katman bölgesi) ve tests/ui/revision211.spec.ts (çekmece).",
+    "tests": "unit 457+1 skipped; ui 58/58; ui-audit errors=0 issues=0; overlay-audit errors=0 issues=0; 6 electron smoke",
+    "date": "2026-10-17"
+  },
+  "release2_1_2": {
+    "channelAsset": "https://x0.at/SJBk.gz",
+    "sha256": "bd8033c3c24f56ed2ac6503dca6507ac6dded83eab65d1779820146ea5bb94b7",
+    "summary": "Bozuk gereksinim satırları: düz '64'/'32' işlemci metni bit gereksinimi olarak, düz '10' gibi OS metni Windows sürümü olarak karşılaştırılıyor; etiketsiz önerilen blokları withRawFields() ile bileşenlere ayrılıp Önerilen sütunu açılıyor. Gereksinimi hiç olmayan oyunlara Sistem sekmesinde Karşılıyor/Karşılamıyor/Bilinmiyor kararı (Game.reqVerdict). compatibilityKey ham metni parmak iziyle taşıyor (araç girdisi sınırı). Liste önizleme kartı kenar sıkıştırması.",
+    "tests": "unit 462+1 skipped; ui 59/59; ui-audit errors=0 issues=0; overlay-audit 0/0; 6 electron smoke",
+    "date": "2026-10-17"
+  },
+  "release2_1_3": {
+    "channelAsset": "https://x0.at/lH8D.gz"
+  },
+  "release2_1_4": {
+    "channelAsset": "https://x0.at/9rJ9.gz"
+  },
+  "release2_1_5": {
+    "channelAsset": "https://x0.at/HYPX.gz"
+  },
+  "release2_1_6": {
+    "channelAsset": "https://x0.at/ti33.gz"
+  },
+  "release2_2_0": {
+    "channelAsset": "https://x0.at/ZSdP.gz"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0.13",
+  "target": "Windows x64 (PE machine 0x8664)",
+  "asarCodeAndAssetsByteMatched": true,
+  "browserFilesPresent": true,
+  "checkedFiles": [
+    "electron-dist/browser-preload.cjs",
+    "electron-dist/browser-ui.js",
+    "electron-dist/browser.html",
+    "electron-dist/main.cjs",
+    "electron-dist/preload.cjs",
+    "dist/assets/index-Cd-DzE9t.js",
+    "dist/assets/index-DELVDIX3.css",
+    "dist/index.html"
+  ]
+}

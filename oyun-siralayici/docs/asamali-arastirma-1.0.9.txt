@@ -1,0 +1,21 @@
+{
+  "platform": "Linux Electron; Windows runtime not tested",
+  "model": "Local deterministic HTTP/SSE fixture; not real LM Studio inference",
+  "stages": [
+    "DONANIM",
+    "ÖZET",
+    "DİL VE SÜRE",
+    "TÜRKÇE YAMA"
+  ],
+  "selectedOutputLimit": 16128,
+  "allRequestsKeptSelectedLimit": true,
+  "requestCount": 9,
+  "retiredEstimateWouldClamp": true,
+  "hardwareSaved": true,
+  "summarySaved": true,
+  "malformedCallRejected": true,
+  "rawInputPreserved": true,
+  "protocolEnvelopeRepaired": true,
+  "correctedPatchSaved": true,
+  "missingDetailsNotFaked": true
+}

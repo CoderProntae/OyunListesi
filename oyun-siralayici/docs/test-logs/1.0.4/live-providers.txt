@@ -1,0 +1,293 @@
+{
+  "name": "Stardew Valley",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:02.346Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/413150/",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T13:13:02.346Z"
+    },
+    {
+      "store": "GOG",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:02.109Z",
+      "source": "GOG kataloğu",
+      "url": "https://www.gog.com/en/game/stardew_valley",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T13:13:02.109Z"
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:02.109Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    }
+  ],
+  "stores": [
+    {
+      "name": "Steam",
+      "url": "https://store.steampowered.com/app/413150/",
+      "verified": true,
+      "price": "$5.99 USD",
+      "source": "Steam Store",
+      "checkedAt": "2026-10-15T13:13:02.346Z",
+      "priceUpdatedAt": "2026-10-15T13:13:02.346Z"
+    },
+    {
+      "name": "GOG",
+      "url": "https://www.gog.com/en/game/stardew_valley",
+      "verified": true,
+      "price": "5.99 USD",
+      "source": "GOG kataloğu",
+      "checkedAt": "2026-10-15T13:13:02.109Z",
+      "priceUpdatedAt": "2026-10-15T13:13:02.109Z"
+    }
+  ],
+  "hltb": {
+    "status": "found",
+    "main": 53,
+    "mainExtra": 94.5,
+    "completionist": 172.5,
+    "allStyles": 100.5,
+    "url": "https://howlongtobeat.com/game/34716",
+    "sourceUrl": "https://www.gog.com/en/game/stardew_valley",
+    "via": "HowLongToBeat · GOG üzerinde yayımlanan süreler",
+    "checkedAt": "2026-10-15T13:13:03.153Z"
+  },
+  "turkish": {
+    "official": true,
+    "interface": true,
+    "audio": false,
+    "subtitles": false,
+    "patch": "unverified",
+    "checkedAt": "2026-10-15T13:13:02.346Z",
+    "sources": [
+      {
+        "title": "Steam Store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "checkedAt": "2026-10-15T13:13:02.346Z",
+        "kind": "official"
+      },
+      {
+        "title": "GOG Store",
+        "url": "https://www.gog.com/en/game/stardew_valley",
+        "checkedAt": "2026-10-15T13:13:02.109Z",
+        "kind": "official"
+      }
+    ]
+  }
+}
+{
+  "name": "Fortnite",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:03.254Z",
+      "source": "Steam Store",
+      "message": "Bu adla Steam mağazasında ürün bulunamadı."
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:03.157Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:03.158Z",
+      "source": "EGData · topluluk kataloğu",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "matchedTitle": "Fortnite",
+      "message": "Ürün bağlantısı EGData katalog eşlemesinden alındı; Epic sayfası canlı doğrulaması değildir.",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Epic Games",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "verified": true,
+      "price": "Ücretsiz",
+      "source": "EGData · topluluk kataloğu",
+      "checkedAt": "2026-10-15T13:13:03.158Z",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    }
+  ],
+  "hltb": {
+    "status": "unavailable",
+    "checkedAt": "2026-10-15T13:13:04.649Z",
+    "attemptedAt": "2026-10-15T13:13:04.649Z",
+    "message": "HowLongToBeat için kesin oyun eşleşmesi alınamadı; süre bilinmiyor."
+  },
+  "turkish": {
+    "official": null,
+    "interface": null,
+    "audio": null,
+    "subtitles": null,
+    "patch": "unverified",
+    "sources": []
+  }
+}
+{
+  "name": "Portal 2",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:04.904Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/620/",
+      "matchedTitle": "Portal 2",
+      "priceUpdatedAt": "2026-10-15T13:13:04.904Z"
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:04.651Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:04.651Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    }
+  ],
+  "stores": [
+    {
+      "name": "Steam",
+      "url": "https://store.steampowered.com/app/620/",
+      "verified": true,
+      "price": "$7.19 USD",
+      "source": "Steam Store",
+      "checkedAt": "2026-10-15T13:13:04.904Z",
+      "priceUpdatedAt": "2026-10-15T13:13:04.904Z"
+    }
+  ],
+  "hltb": {
+    "status": "found",
+    "main": 8.58,
+    "mainExtra": 13.77,
+    "completionist": 22.93,
+    "allStyles": 10.63,
+    "url": "https://howlongtobeat.com/game/7231",
+    "sourceUrl": "https://howlongtobeat.com/game/7231",
+    "via": "HowLongToBeat",
+    "checkedAt": "2026-10-15T13:13:06.816Z"
+  },
+  "turkish": {
+    "official": true,
+    "interface": true,
+    "audio": false,
+    "subtitles": true,
+    "patch": "unverified",
+    "checkedAt": "2026-10-15T13:13:04.904Z",
+    "sources": [
+      {
+        "title": "Steam Store",
+        "url": "https://store.steampowered.com/app/620/",
+        "checkedAt": "2026-10-15T13:13:04.904Z",
+        "kind": "official"
+      }
+    ]
+  }
+}
+{
+  "name": "Hades",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:07.115Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/1145360/",
+      "matchedTitle": "Hades",
+      "priceUpdatedAt": "2026-10-15T13:13:07.115Z"
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:13:06.818Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:13:06.819Z",
+      "source": "EGData · topluluk kataloğu",
+      "url": "https://store.epicgames.com/tr/p/hades",
+      "matchedTitle": "Hades",
+      "message": "Ürün bağlantısı EGData katalog eşlemesinden alındı; Epic sayfası canlı doğrulaması değildir.",
+      "priceUpdatedAt": "2026-01-08T16:09:34.925Z"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Steam",
+      "url": "https://store.steampowered.com/app/1145360/",
+      "verified": true,
+      "price": "$8.25 USD",
+      "source": "Steam Store",
+      "checkedAt": "2026-10-15T13:13:07.115Z",
+      "priceUpdatedAt": "2026-10-15T13:13:07.115Z"
+    },
+    {
+      "name": "Epic Games",
+      "url": "https://store.epicgames.com/tr/p/hades",
+      "verified": true,
+      "price": "235.00 TRY",
+      "source": "EGData · topluluk kataloğu",
+      "checkedAt": "2026-10-15T13:13:06.819Z",
+      "priceUpdatedAt": "2026-01-08T16:09:34.925Z"
+    }
+  ],
+  "hltb": {
+    "status": "unavailable",
+    "checkedAt": "2026-10-15T13:13:07.755Z",
+    "attemptedAt": "2026-10-15T13:13:07.755Z",
+    "message": "HowLongToBeat için kesin oyun eşleşmesi alınamadı; süre bilinmiyor."
+  },
+  "turkish": {
+    "official": false,
+    "interface": null,
+    "audio": null,
+    "subtitles": null,
+    "patch": "unverified",
+    "checkedAt": "2026-10-15T13:13:07.115Z",
+    "sources": [
+      {
+        "title": "Steam Store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "checkedAt": "2026-10-15T13:13:07.115Z",
+        "kind": "official"
+      }
+    ]
+  }
+}

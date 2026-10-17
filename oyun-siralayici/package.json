@@ -1,0 +1,109 @@
+{
+  "name": "oyun-siralayici",
+  "version": "2.2.1",
+  "private": true,
+  "description": "Yerel yapay zeka destekli oyun kutuphanesi ve backlog yoneticisi",
+  "author": "Oyun Siralayici",
+  "license": "MIT",
+  "main": "electron-dist/main.cjs",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "preview:server": "tsx scripts/preview-server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build:code": "vite build && node scripts/build-main.mjs && node scripts/licenses.mjs",
+    "build": "npm run build:code && node scripts/package.mjs",
+    "desktop": "npm run build:code && electron .",
+    "test:ui": "playwright test",
+    "licenses": "node scripts/licenses.mjs",
+    "format": "prettier --write src shared electron scripts tests *.ts *.json index.html"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "6.3.1",
+    "@dnd-kit/sortable": "10.0.0",
+    "@dnd-kit/utilities": "3.2.2",
+    "@tanstack/react-virtual": "3.13.12",
+    "cheerio": "1.0.0",
+    "framer-motion": "14.2.0",
+    "ipaddr.js": "2.2.0",
+    "lucide-react": "0.468.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "systeminformation": "5.33.15",
+    "undici": "6.29.0",
+    "zod": "3.25.76",
+    "zod-to-json-schema": "3.25.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "4.7.0",
+    "ajv": "8.20.0",
+    "electron": "44.7.2",
+    "electron-builder": "26.15.3",
+    "esbuild": "0.25.10",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "6.4.4",
+    "vitest": "5.0.4"
+  },
+  "build": {
+    "appId": "local.oyunsiralayici.desktop",
+    "productName": "Oyun Siralayici",
+    "asar": true,
+    "directories": {
+      "output": "../.cache/oyun-package"
+    },
+    "files": [
+      "dist/**/*",
+      "electron-dist/**/*",
+      "package.json",
+      "!node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "artifactName": "Oyun-Siralayici-${version}-Portable.exe",
+      "icon": "resources/icon.ico",
+      "signExecutable": false
+    },
+    "portable": {
+      "requestExecutionLevel": "user"
+    },
+    "compression": "maximum",
+    "extraMetadata": {
+      "productName": "Oyun Siralayici"
+    },
+    "npmRebuild": false,
+    "electronLanguages": [
+      "tr",
+      "en-US"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/THIRD-PARTY-LICENSES.txt",
+        "to": "THIRD-PARTY-LICENSES.txt"
+      },
+      {
+        "from": "LICENSE",
+        "to": "LICENSE.oyun-siralayici.txt"
+      },
+      {
+        "from": "resources/overlay",
+        "to": "overlay"
+      }
+    ]
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "overrides": {
+    "global-agent": "4.1.3"
+  }
+}

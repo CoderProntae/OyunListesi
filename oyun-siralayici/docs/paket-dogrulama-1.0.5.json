@@ -1,0 +1,16 @@
+{
+  "version": "1.0.5",
+  "target": "Windows x64 (PE machine 0x8664)",
+  "asarCodeAndAssetsByteMatched": true,
+  "browserFilesPresent": true,
+  "checkedFiles": [
+    "electron-dist/browser-preload.cjs",
+    "electron-dist/browser-ui.js",
+    "electron-dist/browser.html",
+    "electron-dist/main.cjs",
+    "electron-dist/preload.cjs",
+    "dist/assets/index-DLNacPsC.js",
+    "dist/assets/index-K8_4rbzz.css",
+    "dist/index.html"
+  ]
+}

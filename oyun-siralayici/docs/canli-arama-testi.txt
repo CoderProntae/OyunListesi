@@ -1,0 +1,12 @@
+{
+  "liveSearch": true,
+  "provider": "DuckDuckGo (anahtarsız)",
+  "count": 8,
+  "first": {
+    "title": "Portal 2 Türkçe Yama - Turkce-yama.com",
+    "url": "https://turkce-yama.com/portal-2-turkce-yama.htm",
+    "snippet": "Portal 2, Valve Corporation tarafından geliştirilen ve yayınlanan birinci şahıs nişancı türünde bir bulmaca oyunudur. İndireceğiniz Portal 2 TR dil yama eklentisini yükleyerek Portal 2yi Türkçe oynayabileceksiniz.",
+    "domain": "turkce-yama.com"
+  },
+  "notice": "Bu adaylar doğrulanmış yama değildir."
+}

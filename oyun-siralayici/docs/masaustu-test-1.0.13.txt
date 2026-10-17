@@ -1,0 +1,2 @@
+{"desktop":true,"autonomousDefault":true,"bridge":true,"add":true,"remove":true,"undo":true,"dataPath":"/home/user/oyun-siralayici/.cache/electron-smoke-xtwJZI/Oyun Siralayici","platform":"Linux (not a Windows runtime test)"}
+exit=0

@@ -1,0 +1,21 @@
+
+> oyun-siralayici@1.0.1 test:ui
+> playwright test
+
+
+Running 12 tests using 1 worker
+
+  ✓   1 tests/ui/app.spec.ts:144:5 › bulk numbered import, range selection, duplicate merge and automatic series (2.7s)
+  ✓   2 tests/ui/app.spec.ts:172:5 › manual group, play list membership, delete confirmation and undo (5.0s)
+  ✓   3 tests/ui/app.spec.ts:206:5 › virtualizes 2000 games and persists keyboard reorder (2.5s)
+  ✓   4 tests/ui/app.spec.ts:235:5 › drag game into a group and chat attachment without changing library twice (2.7s)
+  ✓   5 tests/ui/app.spec.ts:278:5 › theme and hardware editing survive reload; unsupported reasoning stays disabled (4.2s)
+  ✓   6 tests/ui/app.spec.ts:300:5 › agent mutation requires visible approval and denial reaches model; allow then mutates (2.5s)
+  ✓   7 tests/ui/app.spec.ts:330:5 › wizard supports next/back, multiselect, custom answer and resumes agent (2.5s)
+  ✓   8 tests/ui/app.spec.ts:362:5 › small viewport remains operable and modal focus is contained (2.2s)
+  ✓   9 tests/ui/app.spec.ts:379:5 › wizard skip and cancel are sent back without mutating library (1.9s)
+  ✓  10 tests/ui/app.spec.ts:402:5 › clean detail view keeps match controls and all requirement explanations in disclosures (2.3s)
+  ✓  11 tests/ui/app.spec.ts:436:5 › consecutive tool cards collapse without losing results, retry or error details (1.4s)
+  ✓  12 tests/ui/app.spec.ts:495:5 › source provenance retains AI label, quote and changed fields after reload (1.9s)
+
+  12 passed (32.9s)

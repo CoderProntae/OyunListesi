@@ -1,0 +1,34 @@
+{
+  "liveSteam": true,
+  "candidates": 8,
+  "name": "Portal 2",
+  "cpu": "3.0 GHz P4, Çift Çekirdek 2.0 (ve üstü), AMD64X2 (ve üstü)",
+  "os": "Windows 7 / Vista / XP",
+  "year": 2011,
+  "turkish": {
+    "official": true,
+    "interface": true,
+    "audio": false,
+    "subtitles": true,
+    "patch": "unverified",
+    "checkedAt": "2026-10-15T10:40:24.659Z",
+    "sources": [
+      {
+        "title": "Steam Store",
+        "url": "https://store.steampowered.com/app/620/",
+        "checkedAt": "2026-10-15T10:40:24.659Z",
+        "kind": "official"
+      }
+    ]
+  },
+  "coverCached": true,
+  "source": [
+    {
+      "title": "Steam Store",
+      "url": "https://store.steampowered.com/app/620/",
+      "checkedAt": "2026-10-15T10:40:24.659Z",
+      "kind": "official"
+    }
+  ]
+}
+SEARCH {"provider":"Bing RSS (anahtarsız)","count":8,"first":"https://portal.office.com/Home/"}

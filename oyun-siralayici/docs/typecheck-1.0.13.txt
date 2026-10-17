@@ -1,0 +1,5 @@
+
+> oyun-siralayici@1.0.13 typecheck
+> tsc --noEmit
+
+exit=0

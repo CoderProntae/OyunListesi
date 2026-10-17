@@ -1,0 +1,140 @@
+{
+  "name": "Fortnite",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T12:51:23.705Z",
+      "source": "Steam Store",
+      "message": "Bu adla Steam mağazasında ürün bulunamadı."
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T12:51:23.572Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "found",
+      "checkedAt": "2026-10-15T12:51:23.573Z",
+      "source": "EGData · topluluk kataloğu",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "matchedTitle": "Fortnite",
+      "message": "Ürün bağlantısı EGData katalog eşlemesinden alındı; Epic sayfası canlı doğrulaması değildir.",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Epic Games",
+      "url": "https://store.epicgames.com/tr/p/fortnite",
+      "verified": true,
+      "price": "Ücretsiz",
+      "source": "EGData · topluluk kataloğu",
+      "checkedAt": "2026-10-15T12:51:23.573Z",
+      "priceUpdatedAt": "2024-07-21T15:25:09.251Z"
+    }
+  ],
+  "hltb": {
+    "status": "found",
+    "main": 66.1,
+    "mainExtra": 180.24,
+    "completionist": 519.79,
+    "allStyles": 142.48,
+    "url": "https://howlongtobeat.com/game/3657",
+    "sourceUrl": "https://howlongtobeat.com/game/3657",
+    "via": "HowLongToBeat",
+    "checkedAt": "2026-10-15T12:51:25.459Z"
+  },
+  "turkish": {
+    "official": null,
+    "interface": null,
+    "audio": null,
+    "subtitles": null,
+    "patch": "unverified",
+    "sources": []
+  }
+}
+{
+  "name": "Hades",
+  "fetchStatus": "done",
+  "hasDescription": true,
+  "coverCached": true,
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T12:51:25.813Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/1145360/",
+      "matchedTitle": "Hades",
+      "priceUpdatedAt": "2026-10-15T12:51:25.813Z"
+    },
+    {
+      "store": "GOG",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T12:51:25.463Z",
+      "source": "GOG kataloğu",
+      "message": "Bu adla GOG kataloğunda ürün bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Epic Games",
+      "status": "found",
+      "checkedAt": "2026-10-15T12:51:25.464Z",
+      "source": "EGData · topluluk kataloğu",
+      "url": "https://store.epicgames.com/tr/p/hades",
+      "matchedTitle": "Hades",
+      "message": "Ürün bağlantısı EGData katalog eşlemesinden alındı; Epic sayfası canlı doğrulaması değildir.",
+      "priceUpdatedAt": "2026-01-08T16:09:34.925Z"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Steam",
+      "url": "https://store.steampowered.com/app/1145360/",
+      "verified": true,
+      "price": "$8.25 USD",
+      "source": "Steam Store",
+      "checkedAt": "2026-10-15T12:51:25.813Z",
+      "priceUpdatedAt": "2026-10-15T12:51:25.813Z"
+    },
+    {
+      "name": "Epic Games",
+      "url": "https://store.epicgames.com/tr/p/hades",
+      "verified": true,
+      "price": "235.00 TRY",
+      "source": "EGData · topluluk kataloğu",
+      "checkedAt": "2026-10-15T12:51:25.464Z",
+      "priceUpdatedAt": "2026-01-08T16:09:34.925Z"
+    }
+  ],
+  "hltb": {
+    "status": "unavailable",
+    "checkedAt": "2026-10-15T12:51:26.855Z",
+    "attemptedAt": "2026-10-15T12:51:26.855Z",
+    "message": "HowLongToBeat için kesin oyun eşleşmesi alınamadı; süre bilinmiyor."
+  },
+  "turkish": {
+    "official": false,
+    "interface": null,
+    "audio": null,
+    "subtitles": null,
+    "patch": "unverified",
+    "checkedAt": "2026-10-15T12:51:25.813Z",
+    "sources": [
+      {
+        "title": "Steam Store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "checkedAt": "2026-10-15T12:51:25.813Z",
+        "kind": "official"
+      }
+    ]
+  }
+}

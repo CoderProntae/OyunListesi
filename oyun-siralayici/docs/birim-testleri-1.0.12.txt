@@ -1,0 +1,23 @@
+ ✓ tests/agent.test.ts (15 tests) 1246ms
+ ✓ tests/revision111.test.ts (20 tests) 1056ms
+ ✓ tests/revision109.test.ts (41 tests) 689ms
+ ✓ tests/revision107.test.ts (18 tests) 710ms
+ ✓ tests/revision108.test.ts (13 tests) 560ms
+ ✓ tests/revision110.test.ts (28 tests) 466ms
+ ✓ tests/revision112.test.ts (17 tests) 436ms
+ ✓ tests/revision106.test.ts (9 tests) 469ms
+ ✓ tests/revision105.test.ts (9 tests) 412ms
+ ✓ tests/pages.test.ts (14 tests) 267ms
+ ✓ tests/lm.test.ts (8 tests) 83ms
+ ✓ tests/research.test.ts (19 tests) 78ms
+ ✓ tests/queue.test.ts (4 tests) 75ms
+ ✓ tests/catalogs.test.ts (19 tests) 69ms
+ ✓ tests/store.test.ts (11 tests) 48ms
+ ✓ tests/domain.test.ts (19 tests) 25ms
+ ✓ tests/security.test.ts (18 tests) 26ms
+ ✓ tests/context.test.ts (11 tests) 16ms
+ Test Files  18 passed (18)
+      Tests  293 passed (293)
+   Start at  20:52:48
+   Duration  11.68s (tests 68%, import 31%, transform 1%, worker 1%)
+exit=0

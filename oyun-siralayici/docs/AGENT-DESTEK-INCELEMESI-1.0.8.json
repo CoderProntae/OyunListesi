@@ -1,0 +1,124 @@
+{
+  "appVersion": "1.0.8",
+  "scope": "Read-only application audit; local disposable fixtures only, no real LM or user library",
+  "confirmedCases": 11,
+  "results": [
+    {
+      "id": "A01",
+      "confirmed": true,
+      "issue": "Unrelated disk-requirement change invalidates saved GPU result",
+      "before": "pass",
+      "after": "unknown"
+    },
+    {
+      "id": "A02",
+      "confirmed": true,
+      "issue": "Raw-only requirements update is not parsed into comparison fields",
+      "raw": "CPU: Core i5-4460; GPU: GTX 1660 SUPER; RAM: 2 GB",
+      "cpuUsed": "Pentium 4",
+      "ramUsed": 1
+    },
+    {
+      "id": "A03",
+      "confirmed": true,
+      "issue": "No supported unset for an erroneous optional numeric requirement",
+      "nullRejected": true,
+      "omissionPreservesOldValue": 8
+    },
+    {
+      "id": "A04",
+      "confirmed": true,
+      "issue": "AI store update stays hidden behind an old not_found catalog check",
+      "savedURL": "https://store.steampowered.com/app/400/",
+      "renderedStatus": "Bulunamadı",
+      "productButton": false,
+      "agentCannotPatchStoreChecks": true
+    },
+    {
+      "id": "A05",
+      "confirmed": true,
+      "issue": "Updating one HLTB duration replaces the nested object and drops other durations",
+      "before": {
+        "status": "found",
+        "main": 5,
+        "mainExtra": 10,
+        "completionist": 20,
+        "checkedAt": "2026-10-15"
+      },
+      "after": {
+        "status": "found",
+        "main": 6,
+        "checkedAt": "2026-10-15"
+      }
+    },
+    {
+      "id": "A06",
+      "confirmed": true,
+      "issue": "Group creation/editing and series management exist in UI/service but not agent toolset",
+      "agentTools": [
+        "edit_game",
+        "update_game_info",
+        "web_search",
+        "fetch_page",
+        "list_games",
+        "get_list_state",
+        "get_game_info",
+        "add_game",
+        "remove_game",
+        "reorder",
+        "move_to_group",
+        "add_to_play_list",
+        "check_compatibility",
+        "check_turkish_patch",
+        "generate_short_description",
+        "recommend_similar",
+        "ask_user_questions",
+        "refresh_game_info",
+        "record_compatibility"
+      ],
+      "serviceSupportsGroupAndSeries": true
+    },
+    {
+      "id": "A07",
+      "confirmed": true,
+      "issue": "Advertised tool schemas do not fully match validation/data capabilities",
+      "hltbSourceDateAcceptedButNotAdvertised": true,
+      "listLimit100EnforcedButNotAdvertised": true
+    },
+    {
+      "id": "A08",
+      "confirmed": true,
+      "issue": "AI result saves successfully but cannot override an existing heuristic pass",
+      "toolOk": true,
+      "savedStatus": "fail",
+      "renderedStatus": "pass",
+      "heuristic": true
+    },
+    {
+      "id": "A09",
+      "confirmed": true,
+      "issue": "Dedicated summary tool rejects missing description although direct aiSummary write works",
+      "error": "Önce kaynaklı oyun açıklaması getirilmeli.",
+      "modelWasCalled": false,
+      "directSummaryWriteSupported": true
+    },
+    {
+      "id": "A10",
+      "confirmed": true,
+      "issue": "Missing CPU is labeled Algılanamadı and bypasses the Bilinmiyor-only AI exclusion",
+      "actual": "Algılanamadı",
+      "status": "pass",
+      "ai": true
+    },
+    {
+      "id": "A11",
+      "confirmed": true,
+      "issue": "HLTB found status with no hours passes automatic completion check",
+      "researchStatus": "done",
+      "hltb": {
+        "status": "found",
+        "checkedAt": "2026-10-15"
+      }
+    }
+  ]
+}

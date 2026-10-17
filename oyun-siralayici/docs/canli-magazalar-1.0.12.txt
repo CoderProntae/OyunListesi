@@ -1,0 +1,46 @@
+{
+  "platform": "Linux Electron",
+  "game": "Stardew Valley",
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T20:56:27.151Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/413150/",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T20:56:27.151Z"
+    },
+    {
+      "store": "GOG",
+      "status": "found",
+      "checkedAt": "2026-10-15T20:56:25.082Z",
+      "source": "GOG kataloğu",
+      "url": "https://www.gog.com/en/game/stardew_valley",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T20:56:25.082Z"
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T20:56:25.083Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    },
+    {
+      "store": "Xbox",
+      "status": "found",
+      "checkedAt": "2026-10-15T20:56:25.083Z",
+      "source": "Microsoft Store kataloğu",
+      "url": "https://www.xbox.com/tr-TR/games/store/-/9MWR1NC6VQ6L",
+      "matchedTitle": "Stardew Valley",
+      "message": "Platformlar: Bilgisayar",
+      "priceUpdatedAt": "2026-10-15T20:56:25.083Z"
+    }
+  ],
+  "coverCached": true,
+  "renderedStoreCards": true,
+  "noRemovedHltbOrTurkishData": true
+}
+exit=0

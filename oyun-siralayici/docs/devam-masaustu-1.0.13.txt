@@ -1,0 +1,14 @@
+{
+  "platform": "Linux Electron, not Windows",
+  "model": "deterministic HTTP/SSE fixture",
+  "resumeSkippedSavedHardware": true,
+  "onlyHardwareAndSummaryStages": true,
+  "explicitRestartIncludedHardware": true,
+  "previousChatPreserved": true,
+  "stages": [
+    "resume:ÖZET",
+    "restart:DONANIM",
+    "restart:ÖZET"
+  ]
+}
+exit=0

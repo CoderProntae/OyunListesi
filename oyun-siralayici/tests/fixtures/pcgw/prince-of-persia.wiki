@@ -1,0 +1,51 @@
+{{cleanup|No information about the 2003 Windows port released as a part of the [[Prince_of_Persia:_The_Sands_of_Time|Prince of Persia: The Sands of Time]] demo disc that was included with the Gillette safety razors}}
+{{disambig|the first game in the series|the 2008 game|[[Prince of Persia (2008)]]}}
+{{Infobox game
+|cover        = Prince of Persia cover.jpg
+|release dates= 
+{{Infobox game/row/date|DOS|1990}}
+{{Infobox game/row/date|Mac OS|1992}}
+{{Infobox game/row/date|Linux|July 21, 2014|ref={{Refurl|url=https://github.com/NagyD/SDLPoP/blob/master/doc/ChangeLog.txt|title=ChangeLog.txt|date=2021-02-16}}}}
+{{Infobox game/row/date|Windows|July 21, 2014}}
+{{Infobox game/row/date|OS X|October 11, 2014|ref={{Refurl|url=https://github.com/NagyD/SDLPoP/blob/master/doc/ChangeLog.txt|title=ChangeLog.txt|date=2021-02-16}}}}
+|steam appid  = 
+|gogcom id    = 
+|hltb         = 7287
+|mobygames    = 196
+|license      = commercial
+}}
+
+==System requirements==
+{{System requirements
+|OSfamily = DOS
+
+|minOS    = 2.11
+|minCPU   = 8 MHz
+|minRAM   = 512 KB
+|minHD    = 
+|minGPU   = VGA, MCGA, EGA, Tandy, CGA, Hercules
+
+|recOS    = 
+|recCPU   = 
+|recRAM   = 
+|recHD    = 
+|recGPU   = 
+}}
+
+{{System requirements
+|OSfamily = Mac OS
+
+|minOS    = 6.x
+|minCPU   = Motorola 68K
+|minRAM   = At least 2MB of RAM for B&W and 4MB of RAM for color graphics
+|minHD    = 
+|minGPU   = 256 Color
+
+|recOS    = 
+|recCPU   = 
+|recRAM   = 
+|recHD    = 
+|recGPU   = 
+}}
+
+{{References}}

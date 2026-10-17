@@ -1,0 +1,4 @@
+
+> oyun-siralayici@1.0.8 typecheck
+> tsc --noEmit
+

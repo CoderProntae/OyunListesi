@@ -1,0 +1,45 @@
+{
+  "platform": "Linux Electron",
+  "game": "Stardew Valley",
+  "checks": [
+    {
+      "store": "Steam",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:05:19.063Z",
+      "source": "Steam Store",
+      "url": "https://store.steampowered.com/app/413150/",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T13:05:19.063Z"
+    },
+    {
+      "store": "GOG",
+      "status": "found",
+      "checkedAt": "2026-10-15T13:05:18.811Z",
+      "source": "GOG kataloğu",
+      "url": "https://www.gog.com/en/game/stardew_valley",
+      "matchedTitle": "Stardew Valley",
+      "priceUpdatedAt": "2026-10-15T13:05:18.811Z"
+    },
+    {
+      "store": "Epic Games",
+      "status": "not_found",
+      "checkedAt": "2026-10-15T13:05:18.811Z",
+      "source": "EGData · topluluk kataloğu",
+      "message": "Bu adla Epic ürün kaydı EGData kataloğunda bulunamadı.",
+      "candidates": []
+    }
+  ],
+  "completionTimes": {
+    "status": "found",
+    "main": 53,
+    "mainExtra": 94.5,
+    "completionist": 172.5,
+    "allStyles": 100.5,
+    "url": "https://howlongtobeat.com/game/34716",
+    "sourceUrl": "https://www.gog.com/en/game/stardew_valley",
+    "via": "HowLongToBeat · GOG üzerinde yayımlanan süreler",
+    "checkedAt": "2026-10-15T13:05:20.114Z"
+  },
+  "coverCached": true,
+  "renderedStoreAndTimeCards": true
+}

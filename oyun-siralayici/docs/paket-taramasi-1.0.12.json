@@ -1,0 +1,14 @@
+{
+  "archive": "win-unpacked/resources/app.asar (Oyun-Siralayici-1.0.12-Portable.exe)",
+  "scannedFiles": ["electron-dist/main.cjs", "electron-dist/preload.cjs", "electron-dist/browser.html", "dist/assets/index-DBG8nhoK.js"],
+  "searchedRemovedStrings": ["check_turkish_patch", "patchSearch", "hltbapi", "howlongtobeat", "codepotatoes", "Türkçe filtresi", "Ne kadar sürer", "TÜRKÇE YAMA", "DİL VE SÜRE", "türkçe yama", "game_language_options"],
+  "found": [
+    {
+      "string": "patchSearch",
+      "file": "electron-dist/main.cjs",
+      "context": "const legacy = g.turkish !== void 0 || g.hltb !== void 0 || g.patchSearchRevision !== void 0 || ...",
+      "meaning": "Only the one-time upgrade code that recognises pre-1.0.12 records; not the removed patchSearch IPC call"
+    }
+  ],
+  "noteFeaturePresent": { "mainSetNote": true, "rendererNotePanel": true, "preloadAllowsNoteCall": true }
+}

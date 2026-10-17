@@ -1,0 +1,92 @@
+{{disambig|the 1998 first-person shooter|the unrelated 1991 game published by [[Company:Ubi Soft|Ubi Soft]]|[[Unreal (1991)]]}}
+{{Infobox game
+|cover        = Unreal cover.jpg
+|developers   = 
+{{Infobox game/row/developer|Epic MegaGames|Original}}
+{{Infobox game/row/developer|Digital Extremes|Original}}
+{{Infobox game/row/developer|Legend Entertainment|Return to Na Pali}}
+{{Infobox game/row/developer|OldUnreal|Current}}
+{{Infobox game/row/porter|Westlake Interactive|Mac OS}}
+|publishers   = 
+{{Infobox game/row/publisher|GT Interactive|Original}}
+{{Infobox game/row/publisher|Infogrames|Later retail}}
+{{Infobox game/row/publisher|Midway Games|Unreal Anthology}}
+{{Infobox game/row/publisher|MacSoft|Mac OS}}
+{{Infobox game/row/publisher|Epic Games|Digital (2008-2022)}}
+{{Infobox game/row/publisher|OldUnreal|Digital (2024-present)}}
+|engines      = 
+{{Infobox game/row/engine|Unreal Engine 1}}
+|release dates= 
+{{Infobox game/row/date|Windows|May 22, 1998|ref={{Refurl|url=https://web.archive.org/web/20090307062821/http://www.unreal.com/press/unreal_ships_pr.html|title='UNREAL' IS REAL - GT INTERACTIVE, EPIC MEGAGAMES AND DIGITAL EXTREMES SHIP THE YEAR'S MOST EAGERLY ANTICIPATED PC GAME - Unreal.com (archived)|date=2023-06-12}}}}
+{{Infobox game/row/date|Mac OS|September 1, 1998|ref={{Refurl|url=https://web.archive.org/web/20011122122930/http://pc.ign.com/news/4661.html|title=News Briefs - IGN (archived)|date=2024-01-04}}}}
+{{Infobox game/row/date|Linux|December 11, 2025|ref={{Refurl|url=https://github.com/OldUnreal/FullGameInstallers/commit/f9fb44fe03c96753fb4ae976581be04575dd1922|title=feat: added UnrealGold installer · OldUnreal/FullGameInstallers@f9fb44f|date=2026-02-14}}}}
+{{Infobox game/row/date|OS X|December 23, 2025|ref={{Refurl|url=https://github.com/OldUnreal/FullGameInstallers/releases/tag/macos-installers-1|title=Release macOS Game Assets Installers · OldUnreal/FullGameInstallers|date=2026-02-14}}}}
+|real ai level= 0
+|taxonomy     =
+{{Infobox game/row/taxonomy/monetization      | Freeware }}
+{{Infobox game/row/taxonomy/genres            | Action, FPS, Shooter }}
+{{Infobox game/row/taxonomy/series            | Unreal }}
+|steam appid  = 13250
+|steam appid side = 
+|gogcom id    = 1207658679
+|gogcom id side = 
+|hltb         = 10824
+|lutris       = unreal-gold
+|mobygames    = 330
+|wikipedia    = Unreal (1998 video game)
+|license      = former commercial
+}}
+
+{{Introduction
+|introduction      = '''''Unreal''''' is a {{Glossary:Singleplayer}} and {{Glossary:Multiplayer}} {{Glossary:First-person}} {{Glossary:FPS}} game in the ''[[Series:Unreal|Unreal]]'' series developed by [[Company:Epic MegaGames|Epic MegaGames]] and [[Company:Digital Extremes|Digital Extremes]] and published by [[Company:GT Interactive|GT Interactive]]. The game marks the origin of [[Engine:Unreal Engine 1|Unreal Engine]], a proprietary game engine that would see future iterations and be licensed to other developers.
+
+|release history   = ''Unreal'' was first released for [[Windows]] on May 22, 1998, followed by a [[Mac OS]] port by [[Company:Westlake Interactive|Westlake Interactive]] on September 1, 1998.
+
+|current state     = ''Unreal'' enjoys active community support via the [[#OldUnreal 227 Patch|OldUnreal 227 Patch]].
+
+}}
+
+'''General information'''
+{{GOG.com links|1207658679|unreal_series|for game series}}
+{{mm}} [https://steamcommunity.com/app/13250/discussions/ Steam Community Discussions]
+
+==System requirements==
+{{System requirements
+|OSfamily = Windows
+
+|minOS    = NT, 95, 98
+|minCPU   = Intel Pentium 166 MHz
+|minRAM   = 16 MB
+|minHD    = 100 MB
+|minGPU   = 2 MB VRAM
+|minDX    = 
+
+|recOS    = 
+|recCPU   = Intel Pentium II 266 MHz
+|recRAM   = 128 MB
+|recHD    = 450 MB
+|recGPU   = 3dfx Voodoo 2
+|recDX    = 
+|ref      = {{Refurl|url=https://archive.org/download/totallyunreal/UNREAL_GOLD.ISO/HELP%2FReadMe.htm|title=Read Me from Unreal Gold's CD|date=2026-08-20}}
+}}
+
+{{System requirements
+|OSfamily = Mac OS
+
+|minOS    = 7.6
+|minCPU   = PowerPC 603e 180 MHz
+|minCPU2  = PowerPC 604e 132 MHz
+|minRAM   = 32 MB
+|minHD    = 120 MB
+|minGPU   = 
+
+|recOS    = 8.0
+|recCPU   = 
+|recRAM   = 64 MB
+|recHD    = 
+|recGPU   = 
+|ref      = {{Refurl|url=https://www.mobygames.com/game/330/unreal/cover/group-83792/cover-356926/|title=Unreal cover or packaging material - MobyGames|date=2024-11-25}}
+}}
+
+{{References}}
+{{GOG.com Enhancement Project}}

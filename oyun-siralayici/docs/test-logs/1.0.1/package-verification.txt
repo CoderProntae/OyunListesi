@@ -1,0 +1,14 @@
+BYTE MATCH electron-dist/main.cjs
+BYTE MATCH electron-dist/preload.cjs
+MANIFEST 1.0.1 electron-dist/main.cjs
+RENDERER FILES MATCH
+EXE BYTES 116069662
+ASAR ENTRIES /dist
+/dist/assets
+/dist/assets/index-DVtx8bmi.css
+/dist/assets/index-nFdHwJ7A.js
+/dist/index.html
+/electron-dist
+/electron-dist/main.cjs
+/electron-dist/preload.cjs
+/package.json

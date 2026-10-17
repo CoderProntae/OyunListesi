@@ -1,0 +1,25 @@
+ ✓ tests/revision113.test.ts (9 tests) 1595ms
+   ✓ offline at start: nothing is marked failed and the refill is retried on the next start 1374ms
+ ✓ tests/agent.test.ts (15 tests) 1242ms
+ ✓ tests/revision111.test.ts (20 tests) 1058ms
+ ✓ tests/revision109.test.ts (44 tests) 750ms
+ ✓ tests/revision107.test.ts (18 tests) 710ms
+ ✓ tests/revision108.test.ts (13 tests) 554ms
+ ✓ tests/revision106.test.ts (9 tests) 462ms
+ ✓ tests/revision110.test.ts (28 tests) 470ms
+ ✓ tests/revision112.test.ts (17 tests) 450ms
+ ✓ tests/revision105.test.ts (9 tests) 401ms
+ ✓ tests/pages.test.ts (14 tests) 266ms
+ ✓ tests/lm.test.ts (8 tests) 81ms
+ ✓ tests/catalogs.test.ts (27 tests) 81ms
+ ✓ tests/research.test.ts (19 tests) 64ms
+ ✓ tests/queue.test.ts (4 tests) 73ms
+ ✓ tests/store.test.ts (11 tests) 40ms
+ ✓ tests/domain.test.ts (19 tests) 28ms
+ ✓ tests/security.test.ts (18 tests) 26ms
+ ✓ tests/context.test.ts (11 tests) 14ms
+ Test Files  19 passed (19)
+      Tests  313 passed (313)
+   Start at  21:24:38
+   Duration  13.51s (tests 71%, import 27%, transform 1%, worker 1%)
+exit=0

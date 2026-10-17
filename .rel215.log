@@ -1,0 +1,20 @@
+• sürüm 2.1.4 → 2.1.5
+✓ hardware-data          1 sn  · hardware-db.json: 4950 işlemci, 4468 ekran kartı, 488 KB (2026-10-17)
+✓ typecheck              18 sn
+✓ unit                   20 sn  · Tests 489 passed | 1 skipped (490)
+✓ ui                     135 sn  · 67 passed (2.2m)
+✓ ui-audit               124 sn  · 1 passed (2.0m)
+✓ build                  6 sn
+✓ smoke:electron         4 sn  · {"desktop":true,"autonomousDefault":true,"bridge":true,"add":true,"remove":true,"undo":true,
+✓ smoke:research         2 sn
+✓ smoke:upgrade          6 sn
+✓ smoke:browser          3 sn
+✓ smoke:resume           6 sn
+✓ smoke:handoff          2 sn  · {"tokenMessages":3,"takeoverMs":120,"bridge":true}
+✓ package                27 sn
+✓ verify                 0 sn
+• Oyun-Siralayici-2.1.5-Portable.exe  117.1 MB  sha256 4feb50a0598601f1…
+✓ publish                87 sn
+• kanal: https://x0.at/UfL4.gz
+
+Tamam: 2.1.5 · toplam 425 sn

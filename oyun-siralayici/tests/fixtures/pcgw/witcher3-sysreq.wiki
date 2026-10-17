@@ -1,0 +1,48 @@
+==System requirements==
+{{System requirements
+|OSfamily = Windows
+
+|minTGT   = 1080p, 30fps
+|minOS    = 11
+|minCPU   = Intel Core i3-8400
+|minCPU2  = AMD Ryzen 5 2600
+|minRAM   = 12 GB
+|minHD    = 60 GB{{note|As of Update 5.00}}
+|minGPU   = Nvidia GeForce GTX 1660
+|minGPU2  = AMD Radeon RX 5500 XT 8GB
+|minGPU3  = Intel Arc A580
+|minVRAM  = 6 GB
+|minDX    = 
+|minSM    = 
+
+|recTGT   = 1080p, 60fps
+|recOS    = 
+|recCPU   = Intel Core i7-8700K
+|recCPU2  = AMD Ryzen 5 3600X
+|recRAM   = 16 GB
+|recHD    = 
+|recGPU   = Nvidia GeForce GTX 770
+|recGPU2  = AMD Radeon R9 290
+|recGPU3  = Intel Arc B580
+|recVRAM  = 8 GB
+|recDX    = 
+|recSM    = 
+
+|alt1Title = Ultra
+|alt1TGT   = 1440p, 60 fps
+|alt1OS    = 
+|alt1CPU   = Intel Core i7-13700K
+|alt1CPU2  = AMD Ryzen 7 7700X
+|alt1RAM   = 24 GB
+|alt1GPU   = Nvidia GeForce RTX 3070 Ti
+|alt1GPU2  = AMD Radeon RX 6800 XT
+|alt1GPU3  = Intel Arc B580 (w/ XeSS enabled)
+|alt1VRAM  = 
+|alt1DX    =
+|notes     =
+}}
+{{ii}} Both the Legacy pre-4.0 version of the game and the Next-Gen version have lower system requirements.
+{{ii}} System requirement for Ray-Tracing presets can be found [https://support.cdprojektred.com/en/witcher-3/pc/sp-technical/issue/3000/updated-pc-requirements-for-the-witcher-3-wild-hunt here].
+
+{{References}}
+{{GOG.com Enhancement Project}}

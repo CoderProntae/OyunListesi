@@ -1,0 +1,1261 @@
+/* ===================================================================
+   2.0 — quieter, flatter, denser. Loaded after style.css; nothing is
+   removed from the 1.x layout, only spacing, surfaces and the new parts.
+   =================================================================== */
+:root {
+  --bg: #0e0f14;
+  --surface: #14151b;
+  --surface2: #191a21;
+  --surface3: #20212a;
+  --panel: #111218;
+  --text: #ececf2;
+  --muted: #9a9cad;
+  --faint: #7f8295;
+  --border: #ffffff0a;
+  --border-strong: #ffffff14;
+  --shadow: 0 16px 50px #0007;
+  --ok: #45d18c;
+}
+:root[data-theme="light"] {
+  --ok: #1f9d61;
+}
+/* ---------- chrome: thinner bars, less empty space ---------- */
+.titlebar {
+  height: 50px;
+  min-height: 50px;
+  padding: 0 8px 0 16px;
+  gap: 14px;
+  background: color-mix(in srgb, var(--panel) 70%, transparent);
+}
+.brand-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+}
+.command-trigger {
+  height: 34px;
+  border-radius: 10px;
+  background: var(--surface2);
+  border-color: var(--border);
+}
+.nav-rail {
+  width: 58px;
+  padding: 14px 0 12px;
+  background: var(--panel);
+}
+.nav-rail > div {
+  gap: 8px;
+}
+.nav-rail button {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+}
+.page-toolbar {
+  height: 48px;
+  min-height: 48px;
+  padding: 0 18px;
+}
+.group-bar {
+  padding: 0 18px 8px;
+  min-height: 40px;
+}
+.workspace {
+  border-top-color: var(--border);
+}
+.library-panel {
+  background: var(--panel);
+}
+.detail-hero {
+  height: 204px;
+}
+.hero-noise {
+  background: linear-gradient(0deg, var(--bg), transparent 70%);
+}
+.ai-summary {
+  background: var(--surface);
+}
+.info-grid > button,
+.compat-summary,
+.requirement-card {
+  background: var(--surface);
+  border-color: var(--border-strong);
+}
+.modal {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow);
+}
+.chat-panel {
+  background: var(--panel);
+}
+/* ---------- workspace columns grow with the chat list ---------- */
+.workspace.with-chat {
+  grid-template-columns: 304px minmax(0, 1fr) calc(348px + var(--chat-list, 0px));
+}
+@media (min-width: 1600px) {
+  .workspace.with-chat {
+    grid-template-columns: 326px minmax(0, 1fr) calc(378px + var(--chat-list, 0px));
+  }
+}
+@media (max-width: 1370px) {
+  .workspace.with-chat {
+    grid-template-columns: 272px minmax(0, 1fr) calc(310px + var(--chat-list, 0px));
+  }
+}
+@media (max-width: 1160px) {
+  .chat-panel {
+    width: calc(340px + var(--chat-list, 0px));
+  }
+}
+/* ---------- top-right status: now playing, update tick, download ---------- */
+.status-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  -webkit-app-region: no-drag;
+}
+.now-playing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  padding: 0 12px 0 10px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--ok) 35%, transparent);
+  background: color-mix(in srgb, var(--ok) 10%, transparent);
+  color: var(--text);
+  max-width: 280px;
+}
+.now-playing svg {
+  color: var(--ok);
+  flex-shrink: 0;
+}
+.now-playing span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  line-height: 1.15;
+}
+.now-playing small {
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ok);
+  font-weight: 700;
+}
+.now-playing b {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
+}
+.now-playing.dim {
+  opacity: 0.6;
+}
+.update-tick,
+.update-ready,
+.update-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 11px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+.update-tick {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: #04140b;
+  animation: tickIn 0.4s ease-out;
+}
+.update-ready {
+  background: color-mix(in srgb, var(--ok) 16%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ok) 45%, transparent);
+  color: var(--ok);
+}
+.update-progress {
+  background: var(--surface2);
+  color: var(--text);
+}
+.update-progress svg {
+  transform: rotate(-90deg);
+}
+.update-progress circle {
+  fill: none;
+  stroke-width: 4;
+  stroke: var(--border-strong);
+}
+.update-progress circle + circle {
+  stroke: var(--ok);
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.25s;
+}
+@keyframes tickIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+.update-bar {
+  position: relative;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--surface2);
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.update-bar i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: color-mix(in srgb, var(--ok) 55%, transparent);
+  transition: width 0.25s;
+}
+.update-bar span {
+  position: relative;
+  display: block;
+  line-height: 28px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+.update-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.update-note.error {
+  color: var(--red);
+}
+.release-notes {
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+.release-notes h2 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+/* ---------- Yenilikler: before / after ---------- */
+.whats-new {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 20px;
+  min-height: 0;
+}
+.whats-new-shots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.whats-new .release-notes {
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+.segmented {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: var(--surface2);
+  align-self: flex-start;
+}
+.segmented button {
+  border: 0;
+  background: transparent;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+}
+.segmented button.active {
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.compare {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  aspect-ratio: 1510 / 960;
+  cursor: ew-resize;
+  user-select: none;
+  touch-action: none;
+}
+.compare img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  pointer-events: none;
+}
+.compare-before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+}
+.compare-before img {
+  width: auto;
+  height: 100%;
+  min-width: 0;
+  aspect-ratio: 1510 / 960;
+  max-width: none;
+}
+.compare-handle {
+  position: absolute;
+  top: 50%;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 16px #0008;
+}
+.compare-handle::before {
+  content: "⟷";
+  display: block;
+  text-align: center;
+  line-height: 34px;
+  color: #111;
+  font-weight: 700;
+}
+.compare-tag {
+  position: absolute;
+  top: 10px;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: #000a;
+  color: #fff;
+}
+.compare-tag.left {
+  left: 10px;
+}
+.compare-tag.right {
+  right: 10px;
+  background: var(--ok);
+  color: #04140b;
+}
+@media (max-width: 1100px) {
+  .whats-new {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---------- chat panel: list on the left, long resize line ---------- */
+.chat-panel {
+  flex-direction: row;
+}
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+}
+.chat-sidebar-host {
+  display: flex;
+  min-height: 0;
+  position: relative;
+  flex-shrink: 0;
+}
+.chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--panel) 92%, #000);
+}
+.chat-sidebar.closed {
+  width: 0;
+}
+.cs-resizer {
+  width: 9px;
+  margin: 0 -4px;
+  position: relative;
+  z-index: 4;
+  cursor: col-resize;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+.cs-resizer i {
+  width: 1px;
+  height: 100%;
+  background: var(--border-strong);
+  transition:
+    background 0.15s,
+    width 0.15s;
+}
+.cs-resizer::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 5px;
+  height: 46px;
+  margin-top: -23px;
+  border-radius: 4px;
+  background: var(--border-strong);
+}
+.cs-resizer:hover i,
+.cs-resizer:focus-visible i {
+  width: 2px;
+  background: var(--accent);
+}
+.cs-resizer:hover::after,
+.cs-resizer:focus-visible::after {
+  background: var(--accent);
+}
+.cs-head {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 10px 8px 14px;
+}
+.cs-head strong {
+  flex: 1;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+.cs-icon {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.cs-icon:hover {
+  background: var(--surface3);
+  color: var(--text);
+}
+.cs-icon.danger:hover {
+  color: var(--red);
+}
+.cs-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 10px 8px;
+  padding: 0 8px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--faint);
+}
+.cs-search input {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+  min-width: 0;
+  flex: 1;
+  font-size: 0.76rem;
+  box-shadow: none;
+}
+.cs-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 6px 12px;
+}
+.cs-group {
+  border-radius: 10px;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+}
+.cs-group.drop {
+  background: var(--accent-soft);
+  outline: 1px dashed var(--accent-border);
+}
+.cs-group > header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 4px 4px;
+}
+.cs-group > header strong {
+  flex: 1;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+.cs-group > header small {
+  font-size: 0.66rem;
+  color: var(--faint);
+}
+.cs-group > header input,
+.cs-chat input {
+  flex: 1;
+  min-width: 0;
+  height: 22px;
+  padding: 0 6px;
+  font-size: 0.76rem;
+}
+.cs-collapse {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--faint);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.cs-swatch {
+  width: 8px;
+  height: 8px;
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.cs-chat {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 6px 6px 4px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: var(--text);
+  cursor: pointer;
+  outline: none;
+}
+.cs-chat > svg {
+  color: var(--faint);
+  flex-shrink: 0;
+}
+.cs-chat:hover,
+.cs-chat:focus-visible {
+  background: var(--surface2);
+}
+.cs-chat.active {
+  background: var(--accent-soft);
+}
+.cs-chat.active > svg {
+  color: var(--accent-ink);
+}
+.cs-dot {
+  width: 3px;
+  height: 16px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.cs-title {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cs-chat .cs-icon {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+.cs-chat:hover .cs-icon,
+.cs-chat:focus-within .cs-icon,
+.cs-chat.active .cs-icon {
+  opacity: 1;
+}
+.cs-empty {
+  margin: 2px 8px 6px 26px;
+  font-size: 0.7rem;
+  color: var(--faint);
+}
+.cs-menu {
+  position: fixed;
+  z-index: 200;
+  min-width: 190px;
+  padding: 6px;
+  border-radius: 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.cs-menu > button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  padding: 7px 9px;
+  border-radius: 7px;
+  font-size: 0.78rem;
+}
+.cs-menu > button:hover {
+  background: var(--surface3);
+}
+.cs-menu > button.danger {
+  color: var(--red);
+}
+.cs-menu > small {
+  padding: 6px 9px 2px;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--faint);
+}
+.cs-colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 9px 8px;
+  align-items: center;
+}
+.cs-colors button {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+.cs-colors button.active {
+  border-color: var(--text);
+}
+.cs-colors input[type="color"] {
+  width: 22px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+/* ---------- misc ---------- */
+.played-here {
+  margin-top: 4px !important;
+  font-size: 0.74rem;
+  color: var(--ok) !important;
+}
+.settings-content .overlay-editor {
+  margin-top: 6px;
+}
+.settings-content .oe-body {
+  grid-template-columns: minmax(0, 1fr) 220px;
+}
+.toggle-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--surface);
+  cursor: pointer;
+}
+.toggle-row span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+:root[data-theme="light"] .overlay-editor button.active,
+:root[data-theme="light"] .overlay-editor button.primary {
+  color: #fff;
+}
+/* ---------- calmer details ---------- */
+.hero-heading h1 {
+  font-size: clamp(22px, 2.3vw, 30px);
+  letter-spacing: -0.5px;
+}
+.hero-heading h1.long-title {
+  font-size: clamp(18px, 1.7vw, 23px);
+}
+.ai-summary {
+  background: var(--surface);
+  border-color: var(--border-strong);
+}
+/* "Doğrulama gerekiyor" is neutral grey, so the yellow tick (minimum met)
+   and the green tick (fully met) stand out. */
+.compat-dot:not(.recommended):not(.minimum):not(.unsupported) {
+  color: var(--faint);
+  background: color-mix(in srgb, var(--faint) 10%, transparent);
+  border-color: color-mix(in srgb, var(--faint) 24%, transparent);
+}
+.cs-search {
+  flex-direction: row !important;
+}
+/* ===================================================================
+   2.0.1 — motion. Everything here is switched off by "Animasyonlar"
+   (Ayarlar → Görünüm), which sets data-motion="off" on the root.
+   =================================================================== */
+:root {
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --chat-base: 348px;
+}
+/* The chat column always exists; opening / closing animates its width. */
+.workspace {
+  grid-template-columns: 304px minmax(0, 1fr) 0px;
+  transition: grid-template-columns calc(0.34s * var(--speed)) var(--ease-out);
+}
+.workspace.with-chat {
+  grid-template-columns: 304px minmax(0, 1fr) calc(
+      var(--chat-base) + var(--chat-list, 0px)
+    );
+}
+.workspace.list-dragging {
+  transition: none;
+}
+@media (min-width: 1600px) {
+  :root {
+    --chat-base: 378px;
+  }
+  .workspace {
+    grid-template-columns: 326px minmax(0, 1fr) 0px;
+  }
+  .workspace.with-chat {
+    grid-template-columns: 326px minmax(0, 1fr) calc(
+        var(--chat-base) + var(--chat-list, 0px)
+      );
+  }
+}
+@media (max-width: 1370px) {
+  :root {
+    --chat-base: 310px;
+  }
+  .workspace {
+    grid-template-columns: 272px minmax(0, 1fr) 0px;
+  }
+  .workspace.with-chat {
+    grid-template-columns: 272px minmax(0, 1fr) calc(
+        var(--chat-base) + var(--chat-list, 0px)
+      );
+  }
+}
+@media (max-width: 1160px) {
+  .workspace,
+  .workspace.with-chat {
+    grid-template-columns: 260px minmax(0, 1fr) 0px;
+  }
+}
+@media (max-width: 900px) {
+  .workspace,
+  .workspace.with-chat {
+    grid-template-columns: 225px minmax(0, 1fr) 0px;
+  }
+}
+/* The panel keeps its width while its column grows / shrinks: it slides in
+   and out instead of squeezing its text. */
+.chat-panel {
+  animation: none;
+  overflow: hidden;
+  min-width: calc(var(--chat-base) + var(--chat-list, 0px));
+}
+@media (max-width: 1160px) {
+  .chat-panel {
+    min-width: 0;
+  }
+}
+.chat-sidebar {
+  transition: width calc(0.26s * var(--speed)) var(--ease-out);
+}
+.chat-sidebar-host.dragging .chat-sidebar {
+  transition: none;
+}
+.chat-message {
+  animation: msgIn calc(0.32s * var(--speed)) var(--ease-out) both;
+}
+@keyframes msgIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+.settings-content {
+  animation: paneIn calc(0.24s * var(--speed)) var(--ease-out);
+}
+@keyframes paneIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+/* Sliding highlights: navigation rail, detail tabs, settings menu. */
+.nav-rail button,
+.settings-nav > button {
+  position: relative;
+  isolation: isolate;
+}
+.nav-rail button.active,
+.settings-nav > button.active {
+  background: transparent;
+  border-color: transparent;
+}
+.rail-active,
+.nav-active {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+  z-index: -1;
+}
+.detail-tabs > button {
+  position: relative;
+}
+.detail-tabs > button.active {
+  border-bottom-color: transparent;
+}
+.tab-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+/* "Şimdi oynanıyor" slides in, then shrinks to an icon; hover shows the name. */
+.now-playing {
+  animation: chipIn calc(0.5s * var(--speed)) var(--ease-out) both;
+  overflow: hidden;
+  transition:
+    max-width 0.38s var(--ease-out),
+    padding 0.38s var(--ease-out);
+}
+.now-playing span {
+  transition: opacity 0.25s;
+}
+.now-playing.compact {
+  max-width: 38px;
+  padding: 0 11px;
+}
+.now-playing.compact span {
+  opacity: 0;
+}
+.now-playing.compact:hover {
+  max-width: 280px;
+  padding: 0 12px 0 10px;
+}
+.now-playing.compact:hover span {
+  opacity: 1;
+}
+.update-progress,
+.update-ready {
+  animation: chipIn calc(0.35s * var(--speed)) var(--ease-out) both;
+}
+@keyframes chipIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+/* Press feedback. */
+.icon-btn,
+.cs-icon,
+.primary,
+.soft,
+.group-chip,
+.segmented button,
+.update-tick,
+.update-ready {
+  transition:
+    transform 0.12s var(--ease-out),
+    background-color 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+.icon-btn:active:not(:disabled),
+.cs-icon:active,
+.primary:active:not(:disabled),
+.soft:active:not(:disabled),
+.group-chip:active,
+.segmented button:active,
+.update-tick:active,
+.update-ready:active {
+  transform: scale(0.94);
+}
+.cs-chat,
+.game-row {
+  transition:
+    background-color 0.15s,
+    box-shadow 0.15s;
+}
+.cs-menu {
+  animation: menuIn 0.16s var(--ease-out);
+  transform-origin: top left;
+}
+@keyframes menuIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-4px);
+  }
+}
+/* ===================================================================
+   2.0.2 — two chats, one under the other. Both panes get a quieter,
+   simpler look: a slim title row, no role labels, a one-line composer.
+   =================================================================== */
+.chat-panes {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.chat-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1 1 0;
+  position: relative;
+}
+.chat-main.split .chat-header {
+  height: 46px;
+  min-height: 46px;
+  padding: 0 10px 0 14px;
+}
+.chat-main.split .ai-mark {
+  display: none;
+}
+.chat-main.split .chat-header h2 {
+  font-size: 0.78rem;
+}
+.chat-header-actions .icon-btn.active {
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+}
+.split-handle {
+  height: 11px;
+  margin: -5px 0;
+  position: relative;
+  z-index: 3;
+  cursor: row-resize;
+  display: flex;
+  align-items: center;
+  touch-action: none;
+}
+.split-handle i {
+  height: 1px;
+  width: 100%;
+  background: var(--border-strong);
+  transition: background 0.15s;
+}
+.split-handle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 42px;
+  height: 4px;
+  margin-left: -21px;
+  border-radius: 4px;
+  background: var(--border-strong);
+  transition: background 0.15s;
+}
+.split-handle:hover i,
+.split-handle:hover::after {
+  background: var(--accent);
+}
+.pane-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 34px;
+  min-height: 34px;
+  padding: 0 8px 0 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.74rem;
+  transition: box-shadow 0.2s;
+}
+.pane-head strong {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--muted);
+}
+.chat-pane.focused .pane-head {
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.chat-pane.focused .pane-head strong {
+  color: var(--text);
+}
+.pane-head small {
+  font-size: 0.64rem;
+  color: var(--accent-ink);
+}
+.pane-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  flex-shrink: 0;
+}
+.pane-dot.busy {
+  background: var(--accent);
+  animation: paneBusy 1.1s ease-in-out infinite;
+}
+@keyframes paneBusy {
+  50% {
+    opacity: 0.35;
+  }
+}
+.pane-empty {
+  margin: 18px 4px;
+  font-size: 0.74rem;
+  color: var(--faint);
+  text-align: center;
+}
+.chat-pane.compact .chat-feed {
+  padding: 10px 14px;
+}
+.chat-pane.compact .message-label {
+  display: none;
+}
+.chat-pane.compact .chat-message {
+  padding: 4px 0 10px;
+}
+.chat-pane.compact .chat-message.user {
+  display: flex;
+  justify-content: flex-end;
+}
+.chat-pane.compact .chat-message.user > .markdown {
+  max-width: 88%;
+  padding: 7px 11px;
+}
+.chat-pane.compact .markdown {
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+.chat-pane.compact .agent-working {
+  transform: scale(0.9);
+  transform-origin: left center;
+}
+.chat-pane.compact .chat-composer-area {
+  padding: 6px 10px 8px;
+}
+.chat-pane.compact .chat-composer {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 6px 6px 6px 11px;
+  border-radius: 11px;
+}
+.chat-pane.compact .chat-composer textarea {
+  min-height: 24px;
+  max-height: 96px;
+  padding: 3px 0;
+  line-height: 1.5;
+}
+.chat-pane.compact .chat-composer > div {
+  padding: 0;
+}
+.chat-pane.compact .chat-composer > div > span {
+  display: none;
+}
+.chat-pane.compact .send-button {
+  width: 27px;
+  height: 27px;
+}
+.chat-pane.compact .mention-chips,
+.chat-pane.compact .grant-notice {
+  margin-bottom: 6px;
+}
+.cs-chat.lower {
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+}
+.cs-slot {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: var(--accent-ink);
+  background: var(--accent-soft);
+  flex-shrink: 0;
+}
+/* 2.0.2: a failed update stays visible in the top right. */
+.update-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 11px;
+  border-radius: 10px;
+  font-size: 0.78rem;
+  font-weight: 650;
+  color: var(--yellow);
+  background: color-mix(in srgb, var(--yellow) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--yellow) 40%, transparent);
+  animation: chipIn calc(0.35s * var(--speed)) var(--ease-out) both;
+}
+/* ---------- 2.0.2 interface polish ---------- */
+/* Chat list: the rename / delete buttons take no room until hovered or
+   focused, so the title (and the Üst / Alt mark) has space. */
+.cs-chat .cs-icon {
+  display: none;
+}
+.cs-chat:hover .cs-icon,
+.cs-chat:focus-within .cs-icon {
+  display: inline-flex;
+  opacity: 1;
+}
+/* Store cards: long store names / sources stay on one line. */
+.catalog-card-heading > div {
+  min-width: 0;
+  flex: 1;
+}
+.catalog-card-heading h4,
+.catalog-card-heading small {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* "Yenilikler": the comparison fits short windows too. */
+.compare {
+  width: min(100%, calc(56dvh * 1510 / 960));
+  align-self: center;
+}
+/* ---------- 2.0.4 series window ---------- */
+/* Name + searchable list of the library's games with check boxes. */
+.series-picker {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-strong);
+  border-radius: calc(var(--radius) * 0.6);
+  background: color-mix(in srgb, var(--bg) 60%, var(--surface));
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.series-picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px 8px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+.series-picker-head b {
+  margin-left: 4px;
+  color: var(--text);
+  font-weight: 600;
+}
+label.series-search {
+  flex: 0 1 230px;
+  min-width: 0;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0 9px;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 0.45);
+  background: var(--surface);
+  color: var(--faint);
+}
+label.series-search:focus-within {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+label.series-search input:not([type="checkbox"]) {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 7px 0;
+  font-size: 0.78rem;
+  min-width: 0;
+}
+.series-picker-list {
+  max-height: min(300px, 38dvh);
+  overflow-y: auto;
+  padding: 4px;
+}
+.series-picker-list > p {
+  margin: 10px;
+  font-size: 0.78rem;
+}
+label.series-pick {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 7px 9px;
+  border-radius: calc(var(--radius) * 0.4);
+  color: var(--text);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+label.series-pick:hover {
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+}
+label.series-pick.on {
+  background: var(--accent-soft);
+}
+label.series-pick > input {
+  flex: none;
+  margin: 0;
+}
+label.series-pick > span {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+label.series-pick > small {
+  flex: none;
+  color: var(--faint);
+  font-size: 0.68rem;
+}
+.series-chosen {
+  margin: 0;
+  font-size: 0.74rem;
+  overflow-wrap: anywhere;
+}
+/* "Yeni seri" next to the list's OYUN / SERİ label. */
+.list-column-label > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+button.column-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.62rem;
+  letter-spacing: 0.2px;
+  min-height: 0;
+  line-height: 1.5;
+}
+button.column-action:hover,
+button.column-action:focus-visible {
+  color: var(--accent-ink);
+  border-color: var(--accent-border);
+  background: var(--accent-soft);
+}
+/* Metacritic lists the game without a critic score. */
+button.text-link.no-score {
+  display: inline;
+  padding: 0;
+  font-size: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}

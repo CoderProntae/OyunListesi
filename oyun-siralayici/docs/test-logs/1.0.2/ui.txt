@@ -1,0 +1,23 @@
+
+> oyun-siralayici@1.0.2 test:ui
+> playwright test
+
+
+Running 14 tests using 1 worker
+
+  ✓   1 tests/ui/app.spec.ts:170:5 › bulk numbered import, range selection, duplicate merge and automatic series (3.1s)
+  ✓   2 tests/ui/app.spec.ts:198:5 › manual group, play list membership, delete confirmation and undo (4.6s)
+  ✓   3 tests/ui/app.spec.ts:232:5 › virtualizes 2000 games and persists keyboard reorder (2.5s)
+  ✓   4 tests/ui/app.spec.ts:261:5 › drag game into a group and chat attachment without changing library twice (2.6s)
+  ✓   5 tests/ui/app.spec.ts:304:5 › theme and hardware editing survive reload; unsupported reasoning stays disabled (4.1s)
+  ✓   6 tests/ui/app.spec.ts:326:5 › agent mutation requires visible approval and denial reaches model; allow then mutates (2.7s)
+  ✓   7 tests/ui/app.spec.ts:356:5 › wizard supports next/back, multiselect, custom answer and resumes agent (2.4s)
+  ✓   8 tests/ui/app.spec.ts:388:5 › small viewport remains operable and modal focus is contained (2.1s)
+  ✓   9 tests/ui/app.spec.ts:405:5 › wizard skip and cancel are sent back without mutating library (1.7s)
+  ✓  10 tests/ui/app.spec.ts:428:5 › clean detail view keeps match controls and all requirement explanations in disclosures (2.1s)
+  ✓  11 tests/ui/app.spec.ts:462:5 › consecutive tool cards collapse without losing results, retry or error details (1.3s)
+  ✓  12 tests/ui/app.spec.ts:521:5 › source provenance retains AI label, quote and changed fields after reload (2.0s)
+  ✓  13 tests/ui/app.spec.ts:553:5 › 20,000 output and loaded-context inputs are distinct and persist (2.9s)
+  ✓  14 tests/ui/app.spec.ts:579:5 › real SSE orchestration reaches fifteen tool rounds then a Markdown final answer (1.6s)
+
+  14 passed (37.3s)

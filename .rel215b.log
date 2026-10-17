@@ -1,0 +1,19 @@
+✓ hardware-data          1 sn  · hardware-db.json: 4950 işlemci, 4468 ekran kartı, 488 KB (2026-10-17)
+✓ typecheck              20 sn
+✓ unit                   21 sn  · Tests 489 passed | 1 skipped (490)
+✓ ui                     136 sn  · 67 passed (2.3m)
+✓ ui-audit               123 sn  · 1 passed (2.0m)
+✓ build                  5 sn
+✓ smoke:electron         2 sn  · {"desktop":true,"autonomousDefault":true,"bridge":true,"add":true,"remove":true,"undo":true,
+✓ smoke:research         2 sn
+✓ smoke:upgrade          6 sn
+✓ smoke:browser          3 sn
+✓ smoke:resume           6 sn
+✓ smoke:handoff          2 sn  · {"tokenMessages":3,"takeoverMs":319,"bridge":true}
+✓ package                28 sn
+✓ verify                 0 sn
+• Oyun-Siralayici-2.1.5-Portable.exe  117.1 MB  sha256 437289a73052838d…
+✓ publish                51 sn
+• kanal: https://x0.at/HYPX.gz
+
+Tamam: 2.1.5 · toplam 388 sn

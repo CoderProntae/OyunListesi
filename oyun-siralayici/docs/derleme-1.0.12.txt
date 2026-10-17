@@ -1,0 +1,15 @@
+
+> oyun-siralayici@1.0.12 build:code
+> vite build && node scripts/build-main.mjs && node scripts/licenses.mjs
+
+vite v6.4.4 building for production...
+transforming...
+✓ 2269 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.79 kB │ gzip:   0.45 kB
+dist/assets/index-DJVaT2bT.css   84.23 kB │ gzip:  17.02 kB
+dist/assets/index-DBG8nhoK.js   697.79 kB │ gzip: 220.67 kB
+✓ built in 4.26s
+License notices: 125 packages
+exit=0
